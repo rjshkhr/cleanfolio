@@ -1,0 +1,28 @@
+header {
+  height: 6em;
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+header,
+nav,
+nav button,
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  margin-right: 1em;
+}
+
+nav li {
+  margin-left: 1em;
+}
+
+nav li:hover,
+nav button:hover {
+  color: var(--clr-primary);
+}

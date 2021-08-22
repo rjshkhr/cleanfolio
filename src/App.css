@@ -1,0 +1,25 @@
+.app {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1200px;
+  margin: 1em auto;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+  --clr-primary: #f12150;
+}
+
+.dark {
+  background-color: #23283e;
+  color: #f3f0f5;
+  --clr-primary: #6ba8f7;
+}
+
+.link {
+  color: var(--clr-primary);
+}

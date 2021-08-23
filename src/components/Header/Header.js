@@ -38,7 +38,12 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button type='button' onClick={toggleTheme} className='center'>
+        <button
+          type='button'
+          onClick={toggleTheme}
+          className='center'
+          aria-label='toggle theme'
+        >
           {themeName === 'light' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
         </button>
       </nav>

@@ -13,7 +13,7 @@ const About = () => {
       </h1>
       <h3 className='about__role'>A {role}.</h3>
       <p className='about__desc'>{description && description}</p>
-      <div className='about__contact'>
+      <section className='about__contact'>
         <button type='button' className='btn'>
           Resume
         </button>
@@ -27,7 +27,7 @@ const About = () => {
             <LinkedInIcon />
           </a>
         )}
-      </div>
+      </section>
     </section>
   )
 }

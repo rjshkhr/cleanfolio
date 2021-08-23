@@ -1,5 +1,5 @@
 .about {
-  margin-top: 3em;
+  margin-top: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
 }
 
 .about__role {
-  margin-top: 1em;
+  margin-top: 1.2em;
 }
 
 .about__desc {
@@ -20,7 +20,7 @@
 
 .about__desc,
 .about__contact {
-  margin-top: 2em;
+  margin-top: 2.4em;
 }
 
 .about__contact {

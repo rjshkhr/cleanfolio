@@ -14,4 +14,19 @@ const about = {
   },
 }
 
-export { header, about }
+const skills = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'TypeScript',
+  'React',
+  'Redux',
+  'SASS',
+  'Material UI',
+  'Git',
+  'CI/CD',
+  'Jest',
+  'Enzyme',
+]
+
+export { header, about, skills }

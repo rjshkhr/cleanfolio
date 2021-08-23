@@ -1,0 +1,24 @@
+.skills {
+  margin-top: 4em;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills ul {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  padding: 0.8em 1.6em;
+  margin: 0.5em;
+  background-color: var(--clr-bg-alt);
+  border-radius: 2em;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+}

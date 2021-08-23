@@ -12,14 +12,16 @@ main {
 }
 
 .light {
-  --clr-bg: #fff;
-  --clr-fg: #404040;
-  --clr-fg-alt: #3f3f3f;
-  --clr-primary: #2b6bff;
+  --clr-bg: #f0e9df;
+  --clr-bg-alt: #f5eedf;
+  --clr-fg: #555;
+  --clr-fg-alt: #333;
+  --clr-primary: #926640;
 }
 
 .dark {
   --clr-bg: #23283e;
+  --clr-bg-alt: #33384e;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #a09fff;

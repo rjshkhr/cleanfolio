@@ -28,11 +28,11 @@ h1 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 h4 {
@@ -54,17 +54,5 @@ button {
 @media (max-width: 900px) {
   h1 {
     font-size: 2.6rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.7rem;
-  }
-
-  h4 {
-    font-size: 1.5rem;
   }
 }

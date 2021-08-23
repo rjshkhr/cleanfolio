@@ -81,4 +81,8 @@ const skills = [
   'Enzyme',
 ]
 
-export { header, about, projects, skills }
+const contact = {
+  email: 'johnsmith@mail.com',
+}
+
+export { header, about, projects, skills, contact }

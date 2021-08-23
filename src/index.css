@@ -6,8 +6,32 @@
   background-color: inherit;
   color: inherit;
   font-family: inherit;
+  font-size: inherit;
   box-shadow: none;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--clr-fg-alt);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.7rem;
 }
 
 ul {

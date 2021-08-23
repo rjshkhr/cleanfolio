@@ -1,0 +1,31 @@
+.about {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__name {
+  color: var(--clr-primary);
+}
+
+.about__role {
+  margin-top: 1em;
+}
+
+.about__desc {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
+.about__desc,
+.about__contact {
+  margin-top: 2em;
+}
+
+.about__contact {
+  display: flex;
+  align-items: center;
+  width: 11em;
+  justify-content: space-between;
+}

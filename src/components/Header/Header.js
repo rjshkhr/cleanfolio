@@ -11,13 +11,16 @@ const Header = () => {
 
   return (
     <header className='header'>
-      <h3>
-        <a href={homepage} className='link'>
+      <h4>
+        <a href={homepage} className='link logo'>
           {title}
         </a>
-      </h3>
+      </h4>
       <nav>
         <ul>
+          <li>
+            <a href='#about'>About</a>
+          </li>
           <li>
             <a href='#projects'>Projects</a>
           </li>

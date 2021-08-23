@@ -18,12 +18,12 @@ const About = () => {
           Resume
         </button>
         {social.github && (
-          <a href={social.github}>
+          <a href={social.github} className='link link--icon'>
             <GitHubIcon />
           </a>
         )}
         {social.linkedin && (
-          <a href={social.linkedin}>
+          <a href={social.linkedin} className='link link--icon'>
             <LinkedInIcon />
           </a>
         )}

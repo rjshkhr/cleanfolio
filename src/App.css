@@ -29,6 +29,14 @@ main {
   color: var(--clr-primary);
 }
 
+.link:hover {
+  color: var(--clr-primary);
+}
+
+.link--icon {
+  color: var(--clr-fg);
+}
+
 .btn {
   border: 2px solid var(--clr-primary);
   color: var(--clr-primary);

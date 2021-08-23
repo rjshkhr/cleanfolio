@@ -12,23 +12,31 @@ const Header = () => {
   return (
     <header className='header'>
       <h4>
-        <a href={homepage} className='link logo'>
+        <a href={homepage} className='link'>
           {title}
         </a>
       </h4>
       <nav>
         <ul>
           <li>
-            <a href='#about'>About</a>
+            <a href='#about' className='link'>
+              About
+            </a>
           </li>
           <li>
-            <a href='#projects'>Projects</a>
+            <a href='#projects' className='link'>
+              Projects
+            </a>
           </li>
           <li>
-            <a href='#skills'>Skills</a>
+            <a href='#skills' className='link'>
+              Skills
+            </a>
           </li>
           <li>
-            <a href='#contact'>Contact</a>
+            <a href='#contact' className='link'>
+              Contact
+            </a>
           </li>
         </ul>
         <button type='button' onClick={toggleTheme}>

@@ -24,6 +24,10 @@ nav li {
   text-transform: lowercase;
 }
 
+nav .link {
+  color: var(--clr-fg);
+}
+
 nav li:hover,
 nav button:hover {
   color: var(--clr-primary);

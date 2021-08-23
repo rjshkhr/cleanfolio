@@ -47,8 +47,8 @@ main {
 
 .link {
   color: var(--clr-primary);
-	padding: 0 0 0.3em 0;
-	position: relative;
+  padding: 0 0 0.3em 0;
+  position: relative;
 }
 
 .link:hover {
@@ -56,18 +56,18 @@ main {
 }
 
 .link::before {
-	content: '';
-	display: inline;
-	width: 0%;
-	height: 0.2em;
-	position: absolute;
-	bottom: 0;
-	background-color: var(--clr-primary);
-	transition: width 0.2s ease-in;
+  content: '';
+  display: inline;
+  width: 0%;
+  height: 0.2em;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-primary);
+  transition: width 0.2s ease-in;
 }
 
 .link:hover::before {
-	width: 100%;
+  width: 100%;
 }
 
 .link--icon {
@@ -86,7 +86,7 @@ main {
   color: var(--clr-primary);
   border: 2px solid var(--clr-primary);
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
   z-index: 1;
 }
 

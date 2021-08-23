@@ -4,7 +4,7 @@ import { about } from '../../portfolio'
 import './About.css'
 
 const About = () => {
-  const { name, role, description, social } = about
+  const { name, role, description, resume, social } = about
 
   return (
     <div className='about center' id='about'>
@@ -14,9 +14,13 @@ const About = () => {
       <h3 className='about__role'>A {role}.</h3>
       <p className='about__desc'>{description && description}</p>
       <section className='about__contact'>
-        <button type='button' className='btn btn--outline'>
-          Resume
-        </button>
+        {resume && (
+          <a href={resume}>
+            <button type='button' className='btn btn--outline'>
+              Resume
+            </button>
+          </a>
+        )}
         {social.github && (
           <a href={social.github} className='link link--icon'>
             <GitHubIcon />

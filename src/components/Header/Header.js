@@ -44,7 +44,7 @@ const Header = () => {
           className='center'
           aria-label='toggle theme'
         >
-          {themeName === 'light' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
+          {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
         </button>
       </nav>
     </header>

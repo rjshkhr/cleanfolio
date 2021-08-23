@@ -6,14 +6,6 @@ header {
   justify-content: space-between;
 }
 
-header,
-nav,
-nav button,
-nav ul {
-  display: flex;
-  align-items: center;
-}
-
 nav ul {
   margin-right: 1.5em;
 }

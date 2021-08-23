@@ -5,18 +5,13 @@
   background-color: var(--clr-bg);
 }
 
-main {
-  max-width: 1100px;
-  width: 95%;
-  margin: 0 auto;
-}
-
 .light {
   --clr-bg: #f0e9df;
   --clr-bg-alt: #f5eedf;
   --clr-fg: #555;
   --clr-fg-alt: #333;
   --clr-primary: #926640;
+  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .dark {
@@ -25,6 +20,29 @@ main {
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #a09fff;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+main {
+  max-width: 1100px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 5em;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  align-items: center;
 }
 
 .link {
@@ -40,16 +58,31 @@ main {
 }
 
 .btn {
-  border: 2px solid var(--clr-primary);
-  color: var(--clr-primary);
   padding: 0.8em 1.4em;
   font-weight: 700;
   font-size: 0.9rem;
   text-transform: lowercase;
   border-radius: 2em;
+  transition: transform 0.2s ease-in-out;
 }
 
-.btn:hover {
+.btn--outline {
+  border: 2px solid var(--clr-primary);
+  color: var(--clr-primary);
+}
+
+.btn--outline:hover {
   background-color: var(--clr-primary);
   color: var(--clr-bg);
+}
+
+.btn--plain {
+  text-transform: initial;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
+}
+
+.btn--plain:hover {
+  transform: translateY(-4px);
 }

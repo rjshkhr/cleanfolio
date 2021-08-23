@@ -17,7 +17,8 @@ html {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   line-height: 1.2;
   color: var(--clr-fg-alt);
 }
@@ -35,7 +36,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 ul {

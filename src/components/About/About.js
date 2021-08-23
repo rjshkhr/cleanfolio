@@ -7,14 +7,14 @@ const About = () => {
   const { name, role, description, social } = about
 
   return (
-    <section className='about' id='about'>
+    <div className='about center' id='about'>
       <h1>
         Hi, I am <span className='about__name'>{name}.</span>
       </h1>
       <h3 className='about__role'>A {role}.</h3>
       <p className='about__desc'>{description && description}</p>
       <section className='about__contact'>
-        <button type='button' className='btn'>
+        <button type='button' className='btn btn--outline'>
           Resume
         </button>
         {social.github && (
@@ -28,7 +28,7 @@ const About = () => {
           </a>
         )}
       </section>
-    </section>
+    </div>
   )
 }
 

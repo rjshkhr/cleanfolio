@@ -10,14 +10,18 @@ const Header = () => {
   const { homepage, title } = header
 
   return (
-    <header className='header'>
+    <header className='header center'>
       <h4>
-        <a href={homepage} className='link'>
-          {title}
-        </a>
+        {homepage ? (
+          <a href={homepage} className='link'>
+            {title}
+          </a>
+        ) : (
+          title
+        )}
       </h4>
-      <nav>
-        <ul>
+      <nav className='center'>
+        <ul className='center'>
           <li>
             <a href='#about' className='link'>
               About
@@ -39,7 +43,7 @@ const Header = () => {
             </a>
           </li>
         </ul>
-        <button type='button' onClick={toggleTheme}>
+        <button type='button' onClick={toggleTheme} className='center'>
           {themeName === 'light' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
         </button>
       </nav>

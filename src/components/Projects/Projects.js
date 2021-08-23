@@ -25,12 +25,20 @@ const Projects = () => {
               </ul>
             )}
             {project.sourceCode && (
-              <a href={project.sourceCode} className='link link--icon'>
+              <a
+                href={project.sourceCode}
+                aria-label='source code'
+                className='link link--icon'
+              >
                 <GitHubIcon />
               </a>
             )}
             {project.livePreview && (
-              <a href={project.livePreview} className='link link--icon'>
+              <a
+                href={project.livePreview}
+                aria-label='live preview'
+                className='link link--icon'
+              >
                 <LaunchIcon />
               </a>
             )}

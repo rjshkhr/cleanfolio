@@ -21,9 +21,6 @@
   margin-top: 2.4em;
 }
 
-.about__contact {
-  display: flex;
-  align-items: center;
-  width: 11em;
-  justify-content: space-between;
+.about a {
+  margin-right: 1em;
 }

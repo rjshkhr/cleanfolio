@@ -7,13 +7,13 @@ const About = () => {
   const { name, role, description, resume, social } = about
 
   return (
-    <div className='about center' id='about'>
+    <div className='about center'>
       <h1>
         Hi, I am <span className='about__name'>{name}.</span>
       </h1>
       <h3 className='about__role'>A {role}.</h3>
       <p className='about__desc'>{description && description}</p>
-      <section className='about__contact'>
+      <div className='about__contact center'>
         {resume && (
           <a href={resume}>
             <button type='button' className='btn btn--outline'>
@@ -31,7 +31,7 @@ const About = () => {
             <LinkedInIcon />
           </a>
         )}
-      </section>
+      </div>
     </div>
   )
 }

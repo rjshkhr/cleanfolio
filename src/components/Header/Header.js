@@ -23,11 +23,6 @@ const Header = () => {
       <nav className='center'>
         <ul className='center'>
           <li>
-            <a href='#about' className='link'>
-              About
-            </a>
-          </li>
-          <li>
             <a href='#projects' className='link'>
               Projects
             </a>

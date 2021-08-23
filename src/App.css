@@ -79,18 +79,35 @@ main {
   font-weight: 700;
   font-size: 0.9rem;
   text-transform: lowercase;
-  border-radius: 2em;
   transition: transform 0.2s ease-in-out;
 }
 
 .btn--outline {
-  border: 2px solid var(--clr-primary);
   color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+  position: relative;
+  overflow:hidden;
+  z-index: 1;
 }
 
 .btn--outline:hover {
-  background-color: var(--clr-primary);
   color: var(--clr-bg);
+}
+
+.btn--outline:before {
+  content: '';
+  position: absolute;
+  background-color: var(--clr-primary);
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in-out;
+}
+
+.btn--outline:hover:before {
+  right: 0;
 }
 
 .btn--plain {

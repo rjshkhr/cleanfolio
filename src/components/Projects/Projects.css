@@ -10,7 +10,6 @@
   padding: 2em;
   margin: 0 auto;
   text-align: center;
-  border-radius: 1em;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
 }

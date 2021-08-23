@@ -24,3 +24,12 @@
 .about a {
   margin-right: 1em;
 }
+
+@media (max-width: 600px) {
+  .app .about {
+    align-items: flex-start;
+  }
+  .about__desc {
+    font-size: 1rem;
+  }
+}

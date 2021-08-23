@@ -13,7 +13,7 @@ const Projects = () => {
       <div className='projects__grid'>
         {projects.map((project) => (
           <div key={uniqid()} className='projects__container'>
-            <h4>{project.name}</h4>
+            <h3>{project.name}</h3>
             <p className='projects__description'>{project.description}</p>
             {project.stack && (
               <ul className='projects__stack'>

@@ -11,7 +11,7 @@ const About = () => {
       <h1>
         Hi, I am <span className='about__name'>{name}.</span>
       </h1>
-      <h3 className='about__role'>A {role}.</h3>
+      <h2 className='about__role'>A {role}.</h2>
       <p className='about__desc'>{description && description}</p>
       <div className='about__contact center'>
         {resume && (

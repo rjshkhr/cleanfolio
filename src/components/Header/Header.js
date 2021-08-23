@@ -11,7 +11,7 @@ const Header = () => {
 
   return (
     <header className='header center'>
-      <h4>
+      <h3>
         {homepage ? (
           <a href={homepage} className='link'>
             {title}
@@ -19,7 +19,7 @@ const Header = () => {
         ) : (
           title
         )}
-      </h4>
+      </h3>
       <nav className='center'>
         <ul className='center'>
           <li>

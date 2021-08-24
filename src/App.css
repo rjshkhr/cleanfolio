@@ -1,16 +1,16 @@
 .app {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
 }
 
 .light {
-  --clr-bg: #f0e9df;
-  --clr-bg-alt: #f5eedf;
+  --clr-bg: #fcfcfc;
+  --clr-bg-alt: #fff;
   --clr-fg: #555;
-  --clr-fg-alt: #333;
-  --clr-primary: #8d603b;
+  --clr-fg-alt: #444;
+  --clr-primary: #2978B5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -19,7 +19,7 @@
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
-  --clr-primary: #a09fff;
+  --clr-primary: #90a0d9;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
@@ -76,7 +76,7 @@ main {
 
 .btn {
   padding: 0.8em 1.4em;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.9rem;
   text-transform: lowercase;
   transition: transform 0.2s ease-in-out;
@@ -119,4 +119,10 @@ main {
 
 .btn--plain:hover {
   transform: translateY(-4px);
+}
+
+@media (max-width: 600px) {
+  .section {
+    margin-top: 4em;
+  }
 }

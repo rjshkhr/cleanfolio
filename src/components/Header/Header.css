@@ -12,7 +12,7 @@ nav ul {
 
 nav li {
   margin-left: 1.5em;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: lowercase;
 }
 
@@ -23,4 +23,10 @@ nav .link {
 nav li:hover,
 nav button:hover {
   color: var(--clr-primary);
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 6em;
+  }
 }

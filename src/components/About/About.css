@@ -12,7 +12,7 @@
 }
 
 .about__desc {
-  font-size: 1.1rem;
+  font-size: 1rem;
   max-width: 600px;
 }
 
@@ -22,14 +22,16 @@
 }
 
 .about a {
+  margin-right: 0.8em;
+}
+
+.about button {
   margin-right: 1em;
 }
 
 @media (max-width: 600px) {
   .app .about {
     align-items: flex-start;
-  }
-  .about__desc {
-    font-size: 1rem;
+    margin-top: 2em;
   }
 }

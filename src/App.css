@@ -70,6 +70,12 @@ main {
   width: 100%;
 }
 
+.link--nav {
+  color: var(--clr-fg);
+  text-transform: lowercase;
+  font-weight: 500;
+}
+
 .link--icon {
   color: var(--clr-fg);
 }
@@ -119,6 +125,18 @@ main {
 
 .btn--plain:hover {
   transform: translateY(-4px);
+}
+
+.btn--icon {
+  padding: 0;
+}
+
+.btn--icon:hover {
+  color: var(--clr-primary)
+}
+
+.btn--icon:active {
+  transform: translateY(-5px)
 }
 
 @media (max-width: 600px) {

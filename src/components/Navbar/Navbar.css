@@ -1,0 +1,36 @@
+.nav__list {
+  margin-right: 1.5em;
+  display: flex;
+}
+
+.nav__list-item {
+  margin-left: 1.5em;
+}
+
+.nav__hamburger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav__list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .nav__list-item {
+    margin: 0.5em 0;
+  }
+
+  .nav__hamburger {
+    display: flex;
+    z-index: 2;
+    margin-left: 0.5em
+  }
+}

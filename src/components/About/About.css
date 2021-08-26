@@ -21,11 +21,11 @@
   margin-top: 2.4em;
 }
 
-.about a {
+.about .link--icon {
   margin-right: 0.8em;
 }
 
-.about button {
+.about .btn--outline {
   margin-right: 1em;
 }
 

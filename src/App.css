@@ -132,11 +132,11 @@ main {
 }
 
 .btn--icon:hover {
-  color: var(--clr-primary)
+  color: var(--clr-primary);
 }
 
 .btn--icon:active {
-  transform: translateY(-5px)
+  transform: translateY(-5px);
 }
 
 @media (max-width: 600px) {

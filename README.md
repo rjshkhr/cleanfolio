@@ -44,3 +44,12 @@ yarn start
 - Go to `package.json` file and replace -
 
 `"homepage": "https://rajshekhar26.github.io/cleanfolio"` with `"homepage": "https://yourusername.github.io"`.
+
+- Push the changes
+
+- Run
+
+```shell
+yarn build
+yarn deploy
+```

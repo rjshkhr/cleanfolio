@@ -17,6 +17,7 @@ If you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schn
 nvm install
 nvm use
 ```
+
 Or -
 
 ```shell
@@ -43,11 +44,13 @@ yarn start
 
 - Go to `package.json` file and replace -
 
-`"homepage": "https://rajshekhar26.github.io/cleanfolio"` with `"homepage": "https://yourusername.github.io"`.
+`"homepage": "https://rajshekhar26.github.io/cleanfolio"`
 
-- Push the changes
+with `"homepage": "https://yourusername.github.io"`.
 
-- Run
+- Push the changes.
+
+- Build and deploy -
 
 ```shell
 yarn build

@@ -4,6 +4,7 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
 import { ThemeContext } from '../../contexts/theme'
+import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
@@ -18,29 +19,34 @@ const Navbar = () => {
         style={{ display: showNavList ? 'flex' : null }}
         className='nav__list'
       >
-        <li className='nav__list-item'>
-          <button type='button' onClick={toggleNavList}>
-            <a href='#projects' className='link link--nav'>
-              Projects
-            </a>
-          </button>
-        </li>
+        {projects.length ? (
+          <li className='nav__list-item'>
+            <button type='button' onClick={toggleNavList}>
+              <a href='#projects' className='link link--nav'>
+                Projects
+              </a>
+            </button>
+          </li>
+        ) : null}
+        {skills.length ? (
+          <li className='nav__list-item'>
+            <button type='button' onClick={toggleNavList}>
+              <a href='#skills' className='link link--nav'>
+                Skills
+              </a>
+            </button>
+          </li>
+        ) : null}
 
-        <li className='nav__list-item'>
-          <button type='button' onClick={toggleNavList}>
-            <a href='#skills' className='link link--nav'>
-              Skills
-            </a>
-          </button>
-        </li>
-
-        <li className='nav__list-item'>
-          <button type='button' onClick={toggleNavList}>
-            <a href='#contact' className='link link--nav'>
-              Contact
-            </a>
-          </button>
-        </li>
+        {contact.email ? (
+          <li className='nav__list-item'>
+            <button type='button' onClick={toggleNavList}>
+              <a href='#contact' className='link link--nav'>
+                Contact
+              </a>
+            </button>
+          </li>
+        ) : null}
       </ul>
 
       <button

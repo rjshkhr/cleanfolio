@@ -20,9 +20,9 @@ const About = () => {
       <div className='about__contact center'>
         {resume && (
           <a href={resume}>
-            <button type='button' className='btn btn--outline'>
+            <div type='button' className='btn btn--outline'>
               Resume
-            </button>
+            </div>
           </a>
         )}
 

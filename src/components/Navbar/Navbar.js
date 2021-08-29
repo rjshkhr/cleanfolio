@@ -30,6 +30,7 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
+
         {skills.length ? (
           <li className='nav__list-item'>
             <a

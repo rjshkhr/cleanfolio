@@ -1,4 +1,4 @@
-.skills ul {
+.skills__list {
   max-width: 450px;
   width: 95%;
   margin: 0 auto;
@@ -7,6 +7,6 @@
   justify-content: center;
 }
 
-.skills li {
+.skills__list-item {
   margin: 0.5em;
 }

@@ -9,7 +9,6 @@ It is built using React, if you want a template built using HTML, CSS and JS the
 
 [Live Preview](https://rajshekhar26.github.io/cleanfolio)
 
-
 ## Instructions
 
 ### Setup

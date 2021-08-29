@@ -1,6 +1,14 @@
 # Cleanfolio - a clean and simple portfolio template
 
-[Preview](https://rajshekhar26.github.io/cleanfolio)
+It is built using React, if you want a template built using HTML, CSS and JS then check out
+[Cleanfolio Minimal](https://github.com/rajshekhar26/cleanfolio-minimal).
+
+## Preview
+
+![Imgur](https://imgur.com/FwDMNEM.gif)
+
+[Live Preview](https://rajshekhar26.github.io/cleanfolio)
+
 
 ## Instructions
 

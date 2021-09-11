@@ -2,7 +2,6 @@
   margin-right: 1.5em;
   display: flex;
 }
-
 .nav__list-item {
   margin-left: 1.5em;
 }
@@ -28,7 +27,7 @@
     margin: 0.5em 0;
   }
 
-  .nav__hamburger {
+  .app .nav__hamburger {
     display: flex;
     z-index: 2;
     margin-left: 0.8em;

@@ -59,7 +59,7 @@ const Navbar = () => {
       <button
         type='button'
         onClick={toggleTheme}
-        className='center btn btn--icon'
+        className='btn btn--icon nav__theme'
         aria-label='toggle theme'
       >
         {themeName === 'dark' ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}

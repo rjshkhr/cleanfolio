@@ -5,7 +5,7 @@ It is built using React, if you want a template built using HTML, CSS and JS the
 
 ## Preview
 
-![Imgur](https://imgur.com/FwDMNEM.gif)
+[![Imgur](https://imgur.com/FwDMNEM.gif)](https://rajshekhar26.github.io/cleanfolio)
 
 [Live Preview](https://rajshekhar26.github.io/cleanfolio)
 

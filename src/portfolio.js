@@ -1,19 +1,19 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'https://nmpereira-dev.netlify.app/',
+  title: 'Mario',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'Mario Pereira',
+  name: 'Mario',
   role: 'Full Stack Software Developer',
-  description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+  // description:
+  //   'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
   resume: 'https://example.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/nikhilpereira25/',
+    github: 'https://github.com/nmpereira',
   },
 }
 
@@ -52,20 +52,27 @@ const skills = [
   'HTML',
   'CSS',
   'JavaScript',
-  'TypeScript',
-  'React',
-  'Redux',
   'SASS',
-  'Material UI',
+  // 'TypeScript',
+  'MongoDB',
+  'Express',
+  'React',
+  'Node',
+  // 'Redux',
+  // 'Material UI',
   'Git',
   'CI/CD',
-  'Jest',
-  'Enzyme',
+  'Postman',
+  'Python',
+  'BootStrap',
+  'Selenium',
+  // 'Jest',
+  // 'Enzyme',
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'nikhilpereira125@gmail.com',
 }
 
 export { header, about, projects, skills, contact }

@@ -1,0 +1,28 @@
+.ContactForm * {
+  /* border: 1px solid red; */
+}
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name,
+.email,
+.message,
+.submit {
+  margin: 0.5rem 0;
+  border: 1px solid var(--clr-primary);
+  padding: 0.5rem;
+}
+
+.message {
+  padding-bottom: 2.5rem;
+}
+
+.name,
+.email,
+.message {
+  width: 20rem;
+  border-radius: 0.5rem;
+}

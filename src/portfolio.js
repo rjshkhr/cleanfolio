@@ -1,6 +1,8 @@
+import pdf from './components/Pdf/nmpereira_cv.pdf'
+
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://nmpereira-dev.netlify.app/',
+  homepage: window.location.href,
   title: 'Mario',
 }
 
@@ -10,7 +12,7 @@ const about = {
   role: 'Full Stack Software Developer',
   // description:
   //   'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+  resume: pdf,
   social: {
     linkedin: 'https://www.linkedin.com/in/nikhilpereira25/',
     github: 'https://github.com/nmpereira',
@@ -22,7 +24,7 @@ const projects = [
   // if there are no projects, Projects section won't show up
   {
     name: 'Andromedus Consulting',
-    description: 'A WordPress site for a ERP consulting firm',
+    description: 'A WordPress site for a ERP consulting firm.',
     stack: ['WordPress'],
     // sourceCode: 'https://github.com',
     livePreview: 'http://www.andromedusconsulting.com/',
@@ -37,8 +39,7 @@ const projects = [
   },
   {
     name: 'Workout Timer',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+    description: 'Timer for working out or pomodoro using flask, HTML and CSS.',
     stack: ['Flask', 'HTML', 'CSS'],
     sourceCode: 'http://pytimerapp.herokuapp.com/',
     livePreview: 'https://github.com/nmpereira/pytimer',

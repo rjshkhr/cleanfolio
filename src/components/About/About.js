@@ -1,5 +1,9 @@
 import GitHubIcon from '@material-ui/icons/GitHub'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
+import LinkIcon from '@mui/icons-material/Link'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import { FaDiscord } from 'react-icons/fa'
 import { about } from '../../portfolio'
 // import pdf from '../Pdf/nmpereira_cv.pdf'
 import './About.css'
@@ -38,7 +42,6 @@ const About = () => {
                 <GitHubIcon />
               </a>
             )}
-
             {social.linkedin && (
               <a
                 href={social.linkedin}
@@ -46,6 +49,42 @@ const About = () => {
                 className='link link--icon'
               >
                 <LinkedInIcon />
+              </a>
+            )}{' '}
+            {social.twitter && (
+              <a
+                href={social.twitter}
+                aria-label='twitter'
+                className='link link--icon'
+              >
+                <TwitterIcon />
+              </a>
+            )}
+            {social.discord && (
+              <a
+                href={social.discord}
+                aria-label='discord'
+                className='link link--icon'
+              >
+                <FaDiscord />
+              </a>
+            )}{' '}
+            {social.linktree && (
+              <a
+                href={social.linktree}
+                aria-label='linktree'
+                className='link link--icon'
+              >
+                <LinkIcon />
+              </a>
+            )}{' '}
+            {social.calendly && (
+              <a
+                href={social.calendly}
+                aria-label='calendly'
+                className='link link--icon'
+              >
+                <CalendarMonthIcon />
               </a>
             )}
           </>

@@ -16,6 +16,10 @@ const about = {
   social: {
     linkedin: 'https://www.linkedin.com/in/nikhilpereira25/',
     github: 'https://github.com/nmpereira',
+    twitter: 'https://twitter.com/Mariojuanaaa_',
+    discord: 'https://discordapp.com/users/548302698752245780',
+    linktree: 'https://linktr.ee/mariojuanaaa',
+    calendly: 'https://calendly.com/mariojunaaa',
   },
 }
 

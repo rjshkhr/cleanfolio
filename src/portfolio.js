@@ -21,28 +21,27 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    name: 'Andromedus Consulting',
+    description: 'A WordPress site for a ERP consulting firm',
+    stack: ['WordPress'],
+    // sourceCode: 'https://github.com',
+    livePreview: 'http://www.andromedusconsulting.com/',
   },
   {
-    name: 'Project 2',
+    name: 'FriendList',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A project for a friend list that uses CRUD based on Ruby on rails. Uses RDBMS (MySql) to store userdata with user authentication using devise.',
+    stack: ['Ruby on rails', 'BootStrap'],
+    sourceCode: 'https://github.com/nmpereira/FriendsDB-railsfriends',
+    livePreview: 'https://nmpereira.herokuapp.com/',
   },
   {
-    name: 'Project 3',
+    name: 'Workout Timer',
     description:
       'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+    stack: ['Flask', 'HTML', 'CSS'],
+    sourceCode: 'http://pytimerapp.herokuapp.com/',
+    livePreview: 'https://github.com/nmpereira/pytimer',
   },
 ]
 

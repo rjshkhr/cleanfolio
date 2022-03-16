@@ -45,8 +45,8 @@ const projects = [
     name: 'Workout Timer',
     description: 'Timer for working out or pomodoro using flask, HTML and CSS.',
     stack: ['Flask', 'HTML', 'CSS'],
-    sourceCode: 'http://pytimerapp.herokuapp.com/',
-    livePreview: 'https://github.com/nmpereira/pytimer',
+    sourceCode: 'https://github.com/nmpereira/pytimer',
+    livePreview: 'http://pytimerapp.herokuapp.com/',
   },
 ]
 

@@ -27,6 +27,10 @@ const App = () => {
 
       <ScrollToTop />
       <Footer />
+      <img
+        src='https://gpvc.arturio.dev/nmpereiraPortfolio'
+        style={{ opacity: 0 }}
+      />
     </div>
   )
 }

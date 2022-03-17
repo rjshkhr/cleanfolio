@@ -48,6 +48,13 @@ const projects = [
     sourceCode: 'https://github.com/nmpereira/pytimer',
     livePreview: 'http://pytimerapp.herokuapp.com/',
   },
+  {
+    name: 'Shared Timer',
+    description: 'A shared Timer for working with remote teams',
+    stack: ['Express', 'Node', 'Socket.io'],
+    sourceCode: 'https://github.com/nmpereira/time-share',
+    livePreview: 'https://time-share.up.railway.app/',
+  },
 ]
 
 const skills = [

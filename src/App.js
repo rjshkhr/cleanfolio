@@ -1,5 +1,5 @@
 import { useContext, useEffect } from 'react'
-import ReactGA from 'react-ga'
+import ReactGA from 'react-ga4'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -11,10 +11,10 @@ import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
-ReactGA.initialize('G-Y2MSZN4Y6Z', { debug: true })
+ReactGA.initialize('G-04WBZHWT9X')
 const App = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search)
+    ReactGA.send('pageview')
   }, [])
   const [{ themeName }] = useContext(ThemeContext)
 

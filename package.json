@@ -17,6 +17,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-ga": "^3.3.0",
     "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
     "uniqid": "^5.4.0",

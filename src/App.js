@@ -1,4 +1,5 @@
-import { useContext } from 'react'
+import { useContext, useEffect } from 'react'
+import ReactGA from 'react-ga'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
 import About from './components/About/About'
@@ -11,6 +12,10 @@ import Footer from './components/Footer/Footer'
 import './App.css'
 
 const App = () => {
+  useEffect(() => {
+    ReactGA.initialize('G-04WBZHWT9X')
+    ReactGA.pageview(window.location.pathname + window.location.search)
+  })
   const [{ themeName }] = useContext(ThemeContext)
 
   return (
@@ -30,6 +35,7 @@ const App = () => {
       <img
         src='https://gpvc.arturio.dev/nmpereiraPortfolio'
         style={{ opacity: 0 }}
+        alt='track'
       />
     </div>
   )

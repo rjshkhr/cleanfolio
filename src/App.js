@@ -11,7 +11,7 @@ import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
-ReactGA.initialize('G-04WBZHWT9X')
+ReactGA.initialize('G-Y2MSZN4Y6Z', { debug: true })
 const App = () => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search)

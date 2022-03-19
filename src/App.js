@@ -15,7 +15,7 @@ const App = () => {
   useEffect(() => {
     ReactGA.initialize('G-04WBZHWT9X')
     ReactGA.pageview(window.location.pathname + window.location.search)
-  })
+  }, [])
   const [{ themeName }] = useContext(ThemeContext)
 
   return (

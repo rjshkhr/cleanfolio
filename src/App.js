@@ -11,9 +11,9 @@ import Form from './components/Form/Form'
 import Footer from './components/Footer/Footer'
 import './App.css'
 
+ReactGA.initialize('G-04WBZHWT9X')
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize('G-04WBZHWT9X')
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
   const [{ themeName }] = useContext(ThemeContext)

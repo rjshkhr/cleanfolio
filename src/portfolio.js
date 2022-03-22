@@ -70,6 +70,7 @@ const skills = [
   'Express',
   'React',
   'Node',
+  'Socket.io',
   // 'Redux',
 //   'Material UI',
   'Git',

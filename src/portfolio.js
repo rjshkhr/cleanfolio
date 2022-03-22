@@ -78,7 +78,7 @@ const skills = [
   'Python',
   'BootStrap',
   'Selenium',
-  'Linux',
+//   'Linux',
   // 'Enzyme',
 ]
 

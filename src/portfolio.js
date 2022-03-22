@@ -71,14 +71,14 @@ const skills = [
   'React',
   'Node',
   // 'Redux',
-  // 'Material UI',
+//   'Material UI',
   'Git',
   'CI/CD',
   'Postman',
   'Python',
   'BootStrap',
   'Selenium',
-  // 'Jest',
+  'Linux',
   // 'Enzyme',
 ]
 

@@ -3,7 +3,7 @@ import pdf from './components/Pdf/nmpereira_cv.pdf'
 const header = {
   // all the properties are optional - can be left empty or deleted
   homepage: window.location.href,
-  title: 'Mario',
+  title: 'Mario Pereira',
 }
 
 const about = {
@@ -26,6 +26,13 @@ const about = {
 const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
+   {
+    name: 'Shared Timer',
+    description: 'A shared Timer for working with remote teams',
+    stack: ['Express', 'Node', 'Socket.io'],
+    sourceCode: 'https://github.com/nmpereira/time-share',
+    livePreview: 'https://time.nmpereira.com/',
+  },
   {
     name: 'Andromedus Consulting',
     description: 'A WordPress site for a ERP consulting firm.',
@@ -48,13 +55,7 @@ const projects = [
     sourceCode: 'https://github.com/nmpereira/pytimer',
     livePreview: 'http://pytimerapp.herokuapp.com/',
   },
-  {
-    name: 'Shared Timer',
-    description: 'A shared Timer for working with remote teams',
-    stack: ['Express', 'Node', 'Socket.io'],
-    sourceCode: 'https://github.com/nmpereira/time-share',
-    livePreview: 'https://time-share.up.railway.app/',
-  },
+
 ]
 
 const skills = [

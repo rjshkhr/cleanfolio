@@ -1,4 +1,6 @@
+
 import { useContext, useEffect } from 'react'
+import LogRocket from 'logrocket';
 import ReactGA from 'react-ga4'
 import { ThemeContext } from './contexts/theme'
 import Header from './components/Header/Header'
@@ -12,9 +14,12 @@ import Footer from './components/Footer/Footer'
 import './App.css'
 
 ReactGA.initialize('G-04WBZHWT9X')
+LogRocket.init('9g3btl/nmpereira');
+
 const App = () => {
   useEffect(() => {
     ReactGA.send('pageview')
+    
   }, [])
   const [{ themeName }] = useContext(ThemeContext)
 

@@ -18,10 +18,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
-    "test": "react-scripts --openssl-legacy-provider test",
-    "eject": "react-scripts --openssl-legacy-provider eject",
+    "start": "react-scripts start --openssl-legacy-provider",
+    "build": "react-scripts build --openssl-legacy-provider",
+    "test": "react-scripts test --openssl-legacy-provider",
+    "eject": "react-scripts eject --openssl-legacy-provider",
     "lint": "eslint .",
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
     "deploy": "gh-pages -d build"

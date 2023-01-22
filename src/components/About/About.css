@@ -12,6 +12,7 @@
 }
 
 .about__desc {
+  text-align: center;
   font-size: 1rem;
   max-width: 600px;
 }

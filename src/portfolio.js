@@ -26,12 +26,27 @@ const about = {
 const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
+
+  {
+    name: 'Cannabis price tracker',
+    description: 'A price tracker for cannabis products from various dispensaries in canada (Client work)', 
+    stack: ['Express', 'Node', 'Puppeteer', 'MongoDB', 'React', 'TailwindCSS', 'TypeScript'],
+    sourceCode: 'https://github.com/nmpereira/prettydakush',
+    livePreview: 'https://cannabis-price.nmpereira.com/',
+  },
    {
     name: 'Shared Timer',
     description: 'A shared Timer for working with remote teams',
     stack: ['Express', 'Node', 'Socket.io'],
     sourceCode: 'https://github.com/nmpereira/time-share',
     livePreview: 'https://time.nmpereira.com/',
+  },
+  {
+    name: 'Conversation Starters App',
+    description: 'An app to help people with conversation starters/prompts',
+    stack: ['Express', 'Node', 'MongoDB', 'EJS', 'TailwindCSS'],
+    sourceCode: 'https://github.com/nmpereira/cardGameBackend',
+    livePreview: 'http://cards.nmpereira.com/',
   },
   {
     name: 'Andromedus Consulting',
@@ -64,24 +79,21 @@ const skills = [
   'HTML',
   'CSS',
   'JavaScript',
+  'TypeScript',
   'SASS',
-  // 'TypeScript',
   'MongoDB',
   'Express',
   'React',
   'Node',
   'Socket.io',
-  // 'Redux',
-//   'Material UI',
   'Git',
   'CI/CD',
   'Postman',
   'Python',
   'BootStrap',
   'Selenium',
-  'bulma'
-//   'Linux',
-  // 'Enzyme',
+  'bulma',
+  'Linux',
 ]
 
 const contact = {

@@ -1,4 +1,4 @@
-import pdf from './components/Pdf/nmpereira_cv.pdf'
+import pdf from '../public/nmpereira_cv.pdf'
 
 const header = {
   // all the properties are optional - can be left empty or deleted

@@ -1,5 +1,7 @@
 function Cv() {
-  window.location.assign('/nmpereira_cv.pdf')
+  // remove /cv from url
+  const domain = window.location.href.replace(/\/cv$/, '')
+  window.location.href = `${domain}/nmpereira_cv.pdf`
   return null
 }
 

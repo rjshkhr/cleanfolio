@@ -1,4 +1,5 @@
 function Cv() {
+  console.log('CV page')
   // remove /cv from url
   const domain = window.location.href.replace(/\/cv$/, '')
   console.log({ domain })

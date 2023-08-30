@@ -1,0 +1,38 @@
+.education {
+    padding: 2em;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s linear;
+    border-radius: 30px;
+}
+
+.education:hover {
+    transform: translateY(-7px);
+}
+
+.education__grade {
+    margin-top: 1em;
+}
+
+.education__stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1.2em 0;
+}
+
+.education__stack-item {
+    margin: 0.5em;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: var(--clr-fg-alt);
+}
+
+.education .link--icon {
+    margin-left: 0.5em;
+}
+
+#image-photo {
+    width: 200px;
+}

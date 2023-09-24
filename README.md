@@ -1,12 +1,12 @@
 # Cleanfolio
 
-A clean and simple portfolio template built using React, if want a template built with HTML, CSS and JS then check out [Cleanfolio Minimal](https://github.com/rajshekhar26/cleanfolio-minimal).
+Cleanfolio is a portfolio template built with React. However, if you prefer a template built with HTML, CSS, and JavaScript, you can check out Cleanfolio Minimal. [Cleanfolio Minimal](https://github.com/rajshekhar26/cleanfolio-minimal).
 
 ## Preview
 
 [![Imgur](https://imgur.com/FwDMNEM.gif)](https://rajshekhar26.github.io/cleanfolio)
 
-[See Live](https://rajshekhar26.github.io/cleanfolio)
+[Live Demo](https://rajshekhar26.github.io/cleanfolio)
 
 ## Instructions
 
@@ -17,46 +17,46 @@ git clone https://github.com/rajshekhar26/cleanfolio
 cd cleanfolio
 ```
 
-If you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm) (optional) -
+If you use [nvm](https://github.com/nvm-sh/nvm) or [fnm](https://github.com/Schniz/fnm), execute:
 
 ```shell
 nvm install
 nvm use
 ```
 
-Or -
+Or:
 
 ```shell
 fnm install
 fnm use
 ```
 
-Install and run -
+To install and launch the project, run these commands:
 
 ```shell
 yarn
 yarn start
 ```
 
-### How to use
+### How to Use
 
-- Open `public/index.html` and replace -
+- Open the `public/index.html` file and replace:
 
 `<title>John Smith</title>` with `<title>Your Name</title>`.
 
-- Open `src/portfolio.js` and make changes.
+- Open the `src/portfolio.js` file and make the necessary changes.
 
 ### Deployment
 
-- Go to `package.json` file and replace -
+- In the `package.json` file, update:
 
 `"homepage": "https://rajshekhar26.github.io/cleanfolio"`
 
-with `"homepage": "https://yourusername.github.io"`.
+to `"homepage": "https://yourusername.github.io"`.
 
-- Push the changes.
+- Push the changes to your repository.
 
-- Build and deploy -
+- To build and deploy, run the following commands:
 
 ```shell
 yarn build

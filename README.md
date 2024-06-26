@@ -13,7 +13,7 @@ Cleanfolio is a portfolio template built with React. However, if you prefer a te
 ### Setup
 
 ```shell
-git clone https://github.com/rajshekhar26/cleanfolio
+git clone https://github.com/rjshkhr/cleanfolio
 cd cleanfolio
 ```
 
@@ -50,7 +50,7 @@ yarn start
 
 - In the `package.json` file, update:
 
-`"homepage": "https://rajshekhar26.github.io/cleanfolio"`
+`"homepage": "https://rjshkhr.github.io/cleanfolio"`
 
 to `"homepage": "https://yourusername.github.io"`.
 

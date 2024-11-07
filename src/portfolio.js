@@ -1,19 +1,19 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rjshkhr.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: '',
+  title: 'KS.',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Koustav S',
+  role: 'Full Stack Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'Full-stack developer by day, gamer by night, and always a student of the ever-evolving world of technology. Crafting digital realms and conquering virtual ones, all while constantly leveling up in both code and gameplay.',
+  resume: 'https://koustavdev.netlify.app',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/koustav-singh',
+    github: 'https://github.com/KoustavDevelops',
   },
 }
 

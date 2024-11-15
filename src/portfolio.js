@@ -1,19 +1,19 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rjshkhr.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'http://localhost:3000',
+  title: 'MM',
 }
 
 const about = {
   // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
+  name: 'Max Martin',
+  role: 'Software Engineer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'I’m a Software Engineer with over two years of experience in developing innovative solutions to simplify everyday processes and reduce stress through the effective use of technology.',
+  resume: 'https://drive.google.com/file/d/1YCFeGsKZD_XwbSieefHGboNHdjLPH9Mk/view?usp=sharing',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'linkedin.com/in/max-martin1',
+    github: 'github.com/maxmartinn',
   },
 }
 
@@ -21,28 +21,28 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'FinFindr',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
+      'AI powered app that helps users maximize rewards by selecting the best credit card for each vendor type',
+    stack: ['.Net', 'C#', 'React Native', 'OpenAI'],
+    sourceCode: 'https://github.com/SarasotaDevs/FinFindr',
+    livePreview: 'https://github.com/SarasotaDevs/FinFindr',
+  },
+  {
+    name: 'PrepPal',
+    description:
+      'AI powered natural disaster preparedness app',
+    stack: ['FastAPI', 'OpenAI', 'IBM Cloud', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 2',
+    name: 'ChatrBox',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-  },
-  {
-    name: 'Project 3',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Chatroom enabling real-time conversations',
+    stack: ['MongoDB', 'Express', 'React', 'Node'],
+    sourceCode: 'https://github.com/maxmartinn/ChatrBox',
+    livePreview: 'https://github.com/maxmartinn/ChatrBox',
   },
 ]
 

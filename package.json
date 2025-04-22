@@ -21,7 +21,7 @@
     "test": "react-scripts test --openssl-legacy-provider",
     "eject": "react-scripts eject --openssl-legacy-provider",
     "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\"",
+    "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "browserslist": {
     "production": [

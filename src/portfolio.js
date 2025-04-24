@@ -7,8 +7,8 @@ const about = {
   name: 'Leon Lam',
   role: 'Back End Engineer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'I’m Leon, a backend developer from Dallas who enjoys building efficient, reliable systems with tools like Java, Spring Boot, and Docker. I love solving tough backend challenges and constantly learning new things. Outside of tech, I’m into gaming, lifting, and hanging out with my cat.',
+  resume: '/Resume.pdf',
   social: {
     linkedin: 'https://linkedin.com/in/leon-m-lam/',
     github: 'https://github.com/Leon-Lam919',
@@ -17,27 +17,25 @@ const about = {
 
 const projects = [
   {
-    name: 'Project 1',
+    name: 'SmileWorks',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
+      'A scalable office management solution for dental clinics, offering streamlined patient management and appointment scheduling, with support for expanding to multiple locations.',
+    stack: ['NextJS', 'TypeScript', 'React', 'Express', 'MongoDB', 'Docker'],
+    sourceCode: 'https://github.com/Team-D-and-J',
     livePreview: 'https://github.com',
   },
   {
-    name: 'Project 2',
+    name: 'Catafun - Natural Language to SQL Query Generator',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Developed a system that converts natural language questions into complex SQL queries and returns human-readable answers, reducing a 1-hour data analysis task to just 5 minutes. Led a cross-functional team of six, driving collaboration and adaptability. Played a key role in surpassing project goals by 50% through innovative problem-solving and effective team leadership.',
+    stack: ['Python', 'MySQL', 'React', 'JavaScript'],
   },
   {
-    name: 'Project 3',
+    name: 'CPU simulation',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
+      'Simulated a basic computer system with seperate processes for CPU and Memory, communicating through inter-process communication. Memory holds a single program, which the CPU executes step-by-step until completion, at which point the simulation terminates.',
+    stack: ['Java'],
+    sourceCode: 'https://github.com/Leon-Lam919/CS4348/tree/main/Project%201',
     livePreview: 'https://github.com',
   },
 ]

@@ -38,6 +38,13 @@ yarn
 yarn start
 ```
 
+```
+to run in WSL:
+export BROWSER=none
+export NODE_OPTIONS=--openssl-legacy-provider
+yarn start
+```
+
 ### How to Use
 
 - Open the `public/index.html` file and replace:

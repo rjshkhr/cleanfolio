@@ -7,6 +7,7 @@ import Skills from './components/Skills/Skills'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import PhotoGallery from './components/PhotoGallery/PhotoGallery'
 import './App.css'
 
 const App = () => {

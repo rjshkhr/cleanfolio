@@ -15,6 +15,10 @@ const about = {
   },
 }
 
+const photos = [
+
+]
+
 const projects = [
   {
     name: 'SmileWorks',
@@ -62,4 +66,4 @@ const contact = {
   email: 'leonlam34@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, projects, skills, contact, photos }

@@ -21,8 +21,10 @@ const App = () => {
         <About />
         <Projects />
         <Skills />
+        <PhotoGallery />
         <Contact />
       </main>
+
       <ScrollToTop />
       <Footer />
     </div>

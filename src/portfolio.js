@@ -16,7 +16,17 @@ const about = {
 }
 
 const photos = [
-
+  { cat: "/cat_0.jpg", },
+  { cat: "/cat_1.jpg", },
+  { cat: "/cat_2.jpg", },
+  { cat: "/cat_3.jpg", },
+  { cat: "/cat_4.jpg", },
+  { cat: "/cat_5.jpg", },
+  { cat: "/cat_6.jpg", },
+  { cat: "/cat_7.jpg", },
+  { cat: "/cat_8.jpg", },
+  { cat: "/cat_9.jpg", },
+  { cat: "/cat_0.jpg", },
 ]
 
 const projects = [

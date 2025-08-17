@@ -35,3 +35,23 @@
     margin-top: 2em;
   }
 }
+
+.about__header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; /* space between picture and text */
+  margin-bottom: 1.5rem;
+}
+
+.about__picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 70%;   /* round profile */
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.about__intro {
+  display: flex;
+  flex-direction: column;
+}

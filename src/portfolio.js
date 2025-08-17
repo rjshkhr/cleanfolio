@@ -27,6 +27,7 @@ const projects = [
     stack: ['SASS', 'TypeScript', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
+    image: 'cleanfolio.png',
   },
   {
     name: 'Project 2',
@@ -35,6 +36,7 @@ const projects = [
     stack: ['SASS', 'TypeScript', 'React'],
     sourceCode: 'https://github.com',
     livePreview: 'https://github.com',
+    image: 'https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png',
   },
   {
     name: 'Project 3',

@@ -15,46 +15,63 @@ const Navbar = () => {
   const toggleNavList = () => setShowNavList(!showNavList)
 
   return (
-    <nav className='center nav'>
+    <nav className="center nav">
       <ul
         style={{ display: showNavList ? 'flex' : null }}
-        className='nav__list'
+        className="nav__list"
       >
-        {projects.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='/cleanfolio#projects'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Projects
-            </a>
-          </li>
-        ) : null}
+        {/* Dropdown for Home */}
+        <li className="nav__list-item dropdown">
+          <span className="link link--nav">Home ▾</span>
 
-        {skills.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='/cleanfolio#skills'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Skills
-            </a>
-          </li>
-        ) : null}
+          <ul className="dropdown-menu">
+            {projects.length ? (
+              <li>
+                <a
+                  href="/cleanfolio#projects"
+                  onClick={toggleNavList}
+                  className="link link--nav"
+                >
+                  Projects
+                </a>
+              </li>
+            ) : null}
 
-        {contact.email ? (
-          <li className='nav__list-item'>
-            <a
-              href='/cleanfolio#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Contact
-            </a>
-          </li>
-        ) : null}
+            {skills.length ? (
+              <li>
+                <a
+                  href="/cleanfolio#skills"
+                  onClick={toggleNavList}
+                  className="link link--nav"
+                >
+                  Skills
+                </a>
+              </li>
+            ) : null}
+
+            {contact.email ? (
+              <li>
+                <a
+                  href="/cleanfolio#contact"
+                  onClick={toggleNavList}
+                  className="link link--nav"
+                >
+                  Contact
+                </a>
+              </li>
+            ) : null}
+          </ul>
+        </li>
+
+        <li className='nav__list-item'>
+          <Link
+            to='/cleanfolio/career'
+            onClick={toggleNavList}
+            className='link link--nav'
+          >
+            Career
+          </Link>
+        </li>
 
         <li className='nav__list-item'>
           <Link

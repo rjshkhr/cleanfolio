@@ -1,0 +1,86 @@
+.career__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.career-card {
+  border: 1px solid var(--clr-primary);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 1rem 0 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.career-card:hover {
+  transform: translateY(-5px);
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.career-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #38bdf8; /* cyan accent */
+}
+
+.career-company {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.career-date {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--clr-fg-alt);
+  margin-bottom: 0.5rem;
+}
+
+.career-list {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.5rem !important; /* ensure indentation */
+  list-style-type: disc !important; /* force bullets */
+  display: block;
+}
+
+.career-list li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+  display: list-item; /* ensures bullet is rendered */
+}
+
+.career-description {
+  margin: 0.5rem 0 1rem;
+  line-height: 1.5;
+}
+
+.career-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.skill-tag {
+  background: #334155;
+  color: #e2e8f0;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.career-empty {
+  text-align: center;
+  font-style: italic;
+  margin: 2rem 0;
+  color: #94a3b8;
+}

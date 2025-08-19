@@ -43,3 +43,33 @@ ul li {
   padding: 0;
   margin: 0;
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  list-style: none;
+  min-width: 100px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}

@@ -11,6 +11,7 @@ import Footer from './components/Footer/Footer'
 import Blog from "./components/Blog/Blog";
 import BlogPost from "./components/Blog/BlogPost";
 import BlogTag from "./components/Blog/BlogTag";
+import Career from './career'
 import NotFound from './NotFound'
 import './App.css'
 
@@ -38,6 +39,7 @@ const App = () => {
             <Route path="/cleanfolio/blog" element={<Blog />} />
             <Route path="/cleanfolio/blog/:slug" element={<BlogPost />} />
             <Route path="/cleanfolio/blog/tag/:tag" element={<BlogTag />} />
+            <Route path="/cleanfolio/career" element={<Career />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

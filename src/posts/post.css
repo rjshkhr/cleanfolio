@@ -1,0 +1,20 @@
+.blog-ul {
+  list-style-type: disc;
+  padding-left: 2.5rem; 
+  margin: 1rem 0;
+  display: block; 
+}
+
+.blog-ul li {
+  margin-bottom: 0.5rem; 
+  list-style-type: disc;
+  padding-left: 0.5rem;
+}
+
+.inline-code {
+  background-color: #e0e0e0; 
+  color: #c7254e;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: monospace;
+}

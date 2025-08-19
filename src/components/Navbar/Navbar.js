@@ -3,6 +3,7 @@ import Brightness2Icon from '@material-ui/icons/Brightness2'
 import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
 import MenuIcon from '@material-ui/icons/Menu'
 import CloseIcon from '@material-ui/icons/Close'
+import { Link } from 'react-router-dom';
 import { ThemeContext } from '../../contexts/theme'
 import { projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
@@ -22,7 +23,7 @@ const Navbar = () => {
         {projects.length ? (
           <li className='nav__list-item'>
             <a
-              href='#projects'
+              href='/cleanfolio#projects'
               onClick={toggleNavList}
               className='link link--nav'
             >
@@ -34,7 +35,7 @@ const Navbar = () => {
         {skills.length ? (
           <li className='nav__list-item'>
             <a
-              href='#skills'
+              href='/cleanfolio#skills'
               onClick={toggleNavList}
               className='link link--nav'
             >
@@ -46,7 +47,7 @@ const Navbar = () => {
         {contact.email ? (
           <li className='nav__list-item'>
             <a
-              href='#contact'
+              href='/cleanfolio#contact'
               onClick={toggleNavList}
               className='link link--nav'
             >
@@ -54,6 +55,17 @@ const Navbar = () => {
             </a>
           </li>
         ) : null}
+
+        <li className='nav__list-item'>
+          <Link
+            to='/cleanfolio/blog'
+            onClick={toggleNavList}
+            className='link link--nav'
+          >
+            Blog
+          </Link>
+        </li>
+
       </ul>
 
       <button

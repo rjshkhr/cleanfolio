@@ -46,22 +46,6 @@ yarn start
 
 - Open the `src/portfolio.js` file and make the necessary changes.
 
-- Optionally, you can add an image or logo for each project in two ways:
-  1. **Local image**
-     - Put your image inside the `public/images/` folder
-     - In `portfolio.js`, just use the file name:
-      ```js
-      image: "cleanfolio.png"
-      ```
-
-  2. **Web image**
-     - If your image is already hosted online, just paste the URL:
-     ```js
-     image: "https://example.com/my-logo.png"
-     ```
-
-
-
 ### Deployment
 
 - In the `package.json` file, update:

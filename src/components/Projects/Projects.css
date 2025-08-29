@@ -4,4 +4,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
+  padding: 2em;
+}
+
+.section__title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 2em;
+  color: #333;
+}
+
+.section {
+  padding: 4em 0;
+  background-color: #f9f9f9;
 }

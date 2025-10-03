@@ -7,9 +7,10 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Olivia Yoon',
-  role: 'Data Analyst',
+  role: 'Analyst',
   description:
-    'My name is Olivia Yoon. I am a Statistcs student (emphasis in Data Science) at UC Davis, graduating in March 2023. I am most passionate about helping others make smart decisions and my goal is to pursue this passion within the field of data analytics. In my free time, I like listening to different types of music, going to concerts, and hiking.',
+    'I build controls that turn complex contracts into accurate, compliant payments. My focus is on reconciliation, variance testing, and implementing data-driven internal controls and process improvements. I’m passionate about making smart, ethical, and environmentally sound decisions that are both informed now and sustainable in the long term.
+  ',
   resume: '',
   social: {
     linkedin: 'https://linkedin.com/in/olivia-yoon',

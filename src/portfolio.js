@@ -1,75 +1,78 @@
 const header = {
-  // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rjshkhr.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'https://noa-kim.github.io',
+  title: 'NK.',
 }
 
 const about = {
-  // all the properties are optional - can be left empty or deleted
-  name: 'John Smith',
-  role: 'Front End Engineer',
-  picture: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
-
+  name: 'Noa Kim',
+  credentials: 'MSI · MSW (forthcoming)',
+  role: 'Clinical Informatics Design Lead · Product Manager · UX Researcher',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
-  resume: 'https://example.com',
+    'I design stories, services, and systems that make room for the humanity of health care experiences. As Clinical Informatics Design Lead for the Michigan Collaborative for Type 2 Diabetes (MCT2D) and Healthy Behavior Optimization for Michigan (HBOM), I work at the intersection of clinical practice, technology, and community—elevating patients as teachers and building tools that clinicians and patients can trust.',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/noakim/',
+    github: 'https://github.com/noa-kim',
   },
 }
 
+const education = [
+  {
+    degree: 'Master of Social Work (MSW)',
+    school: 'University of Michigan',
+    status: 'In Progress',
+    description:
+      'Focused on healing communities through humane technologies and fair, transparent, and sustainable policies for AI in work, healthcare, and everyday life.',
+  },
+  {
+    degree: 'Master of Science in Information (MSI)',
+    school: 'University of Michigan',
+    concentration: 'Human-Computer Interaction',
+  },
+  {
+    degree: 'Bachelor of Arts',
+    school: 'Beloit College',
+    concentration: 'Public Health & Sociology',
+  },
+]
+
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'AI & Psychosis: A Social Work Perspective',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-    image: 'cleanfolio.png',
+      'SW600 capstone examining AI applications in psychosis diagnosis and treatment—surfacing ethical risks, power dynamics, and the stakes for patients whose experiences resist algorithmic capture.',
+    stack: ['AI Ethics', 'Policy Analysis', 'Qualitative Research', 'Clinical Social Work'],
   },
   {
-    name: 'Project 2',
+    name: 'Patient Storytelling Initiative',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-    image: 'https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png',
+      'Video storytelling products developed with MCT2D and HBOM that elevate patients as teachers within learning health systems, centering lived experience in diabetes care and healthy behavior research.',
+    stack: ['UX Research', 'Community Engagement', 'Learning Health Systems', 'Video Production'],
   },
   {
-    name: 'Project 3',
+    name: 'HCD Training for Healthcare Workers',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'A curriculum and workshop series bringing human-centered design methodology to clinical and care team contexts, building capacity for experimentation and co-design among frontline healthcare workers.',
+    stack: ['Instructional Design', 'HCD', 'Clinical Informatics', 'Facilitation'],
   },
 ]
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Redux',
-  'SASS',
-  'Material UI',
-  'Git',
-  'CI/CD',
-  'Jest',
-  'Enzyme',
+  'UX Research',
+  'Human-Centered Design',
+  'Product Management',
+  'Clinical Informatics',
+  'Design Thinking',
+  'Qualitative Methods',
+  'Usability Testing',
+  'Population Health',
+  'Data-Driven Storytelling',
+  'Learning Health Systems',
+  'AI Policy',
+  'Community Engagement',
 ]
 
 const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'hifromnoa@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, education, projects, skills, contact }

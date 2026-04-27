@@ -1,0 +1,544 @@
+From 81b302833cda36151a52d5faf08279f7bb13b9b9 Mon Sep 17 00:00:00 2001
+From: Claude <noreply@anthropic.com>
+Date: Mon, 27 Apr 2026 19:15:24 +0000
+Subject: [PATCH] Build Noa Kim portfolio with personal content and brand
+ identity
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Populate portfolio.js with Noa's bio, education, work, and skills
+- Add Education section (new component) with timeline-style cards
+- Apply brand color palette: indigo #3C4AA1 / orange #FF4E00 / warm brown #776D5A
+- Update Navbar: Education, Work, Skills, Contact links
+- Rename Projects → Work to reflect non-code project nature
+- Update page title, meta description, and footer attribution
+
+https://claude.ai/code/session_01MZfHmKaDpCBA8cci3qKn3a
+---
+ public/index.html                      |  4 +-
+ src/App.css                            | 26 +++----
+ src/App.js                             |  2 +
+ src/components/About/About.css         | 24 +++++--
+ src/components/About/About.js          | 25 ++++---
+ src/components/Education/Education.css | 64 +++++++++++++++++
+ src/components/Education/Education.js  | 34 +++++++++
+ src/components/Footer/Footer.js        |  7 +-
+ src/components/Navbar/Navbar.js        | 16 ++++-
+ src/components/Projects/Projects.js    |  2 +-
+ src/components/Skills/Skills.css       |  2 +-
+ src/portfolio.js                       | 99 +++++++++++++-------------
+ 12 files changed, 215 insertions(+), 90 deletions(-)
+ create mode 100644 src/components/Education/Education.css
+ create mode 100644 src/components/Education/Education.js
+
+diff --git a/public/index.html b/public/index.html
+index bf40d04..d9b7168 100644
+--- a/public/index.html
++++ b/public/index.html
+@@ -5,12 +5,12 @@
+     <meta name="viewport" content="width=device-width, initial-scale=1" />
+     <meta
+       name="description"
+-      content="Portfolio"
++      content="Noa Kim — Clinical Informatics Design Lead, Product Manager, and UX Researcher in healthcare. MSI · MSW (forthcoming)."
+     />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+-    <title>John Smith</title>
++    <title>Noa Kim</title>
+   </head>
+   <body>
+     <noscript>You need to enable JavaScript to run this app.</noscript>
+diff --git a/src/App.css b/src/App.css
+index d239758..54a2ce3 100644
+--- a/src/App.css
++++ b/src/App.css
+@@ -6,22 +6,22 @@
+ }
+ 
+ .light {
+-  --clr-bg: #fcfcfc;
+-  --clr-bg-alt: #fff;
+-  --clr-fg: #555;
+-  --clr-fg-alt: #444;
+-  --clr-primary: #2978b5;
+-  --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
++  --clr-bg: #fafaf8;
++  --clr-bg-alt: #ffffff;
++  --clr-fg: #2d2926;
++  --clr-fg-alt: #776d5a;
++  --clr-primary: #3c4aa1;
++  --shadow: rgba(119, 109, 90, 0.18) 0px 7px 29px 0px;
+ }
+ 
+ .dark {
+-  --clr-bg: #23283e;
+-  --clr-bg-alt: #2a2f4c;
+-  --clr-fg: #bdbddd;
+-  --clr-fg-alt: #cdcdff;
+-  --clr-primary: #90a0d9;
+-  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
++  --clr-bg: #1c1a17;
++  --clr-bg-alt: #252320;
++  --clr-fg: #eae6df;
++  --clr-fg-alt: #c5bdae;
++  --clr-primary: #ff4e00;
++  --shadow: rgba(0, 0, 0, 0.3) 0px 10px 36px 0px,
++    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+ }
+ 
+ main {
+diff --git a/src/App.js b/src/App.js
+index 08b690a..903e333 100644
+--- a/src/App.js
++++ b/src/App.js
+@@ -2,6 +2,7 @@ import { useContext } from 'react'
+ import { ThemeContext } from './contexts/theme'
+ import Header from './components/Header/Header'
+ import About from './components/About/About'
++import Education from './components/Education/Education'
+ import Projects from './components/Projects/Projects'
+ import Skills from './components/Skills/Skills'
+ import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+@@ -18,6 +19,7 @@ const App = () => {
+ 
+       <main>
+         <About />
++        <Education />
+         <Projects />
+         <Skills />
+         <Contact />
+diff --git a/src/components/About/About.css b/src/components/About/About.css
+index fe695a8..e265a8d 100644
+--- a/src/components/About/About.css
++++ b/src/components/About/About.css
+@@ -7,18 +7,28 @@
+   color: var(--clr-primary);
+ }
+ 
++.about__credentials {
++  font-size: 0.9rem;
++  color: var(--clr-fg-alt);
++  margin-top: 0.4em;
++  letter-spacing: 0.04em;
++}
++
+ .about__role {
+-  margin-top: 1.2em;
++  margin-top: 0.8em;
++  font-size: 1.25rem;
++  font-weight: 500;
++  color: var(--clr-fg-alt);
+ }
+ 
+ .about__desc {
+   font-size: 1rem;
+-  max-width: 600px;
++  max-width: 640px;
+ }
+ 
+ .about__desc,
+ .about__contact {
+-  margin-top: 2.4em;
++  margin-top: 2em;
+ }
+ 
+ .about .link--icon {
+@@ -39,19 +49,19 @@
+ .about__header {
+   display: flex;
+   align-items: center;
+-  gap: 1.5rem; /* space between picture and text */
++  gap: 1.5rem;
+   margin-bottom: 1.5rem;
+ }
+ 
+ .about__picture {
+   width: 180px;
+   height: 180px;
+-  border-radius: 70%;   /* round profile */
++  border-radius: 50%;
+   object-fit: cover;
+-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
++  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+ }
+ 
+ .about__intro {
+   display: flex;
+   flex-direction: column;
+-}
+\ No newline at end of file
++}
+diff --git a/src/components/About/About.js b/src/components/About/About.js
+index e1cd162..714724c 100644
+--- a/src/components/About/About.js
++++ b/src/components/About/About.js
+@@ -4,7 +4,7 @@ import { about } from '../../portfolio'
+ import './About.css'
+ 
+ const About = () => {
+-  const { name, role, description, resume, social, picture } = about
++  const { name, credentials, role, description, resume, social, picture } = about
+ 
+   return (
+     <div className='about center'>
+@@ -21,16 +21,21 @@ const About = () => {
+           />
+         )}
+ 
+-    <div className='about__intro'>
+-      {name && (
+-        <h1>
+-          Hi, I am <span className='about__name'>{name}.</span>
+-        </h1>
+-      )}
++        <div className='about__intro'>
++          {name && (
++            <h1>
++              Hi, I&apos;m <span className='about__name'>{name}.</span>
++            </h1>
++          )}
+ 
+-      {role && <h2 className='about__role'>A {role}.</h2>}
+-      <p className='about__desc'>{description && description}</p>
+-      </div>
++          {credentials && (
++            <p className='about__credentials'>{credentials}</p>
++          )}
++
++          {role && <h2 className='about__role'>{role}</h2>}
++
++          <p className='about__desc'>{description && description}</p>
++        </div>
+       </div>
+ 
+       <div className='about__contact center'>
+diff --git a/src/components/Education/Education.css b/src/components/Education/Education.css
+new file mode 100644
+index 0000000..4913433
+--- /dev/null
++++ b/src/components/Education/Education.css
+@@ -0,0 +1,64 @@
++.education__list {
++  display: flex;
++  flex-direction: column;
++  gap: 1.4em;
++  max-width: 720px;
++  margin: 0 auto;
++}
++
++.education__item {
++  padding: 1.4em 1.8em;
++  background-color: var(--clr-bg-alt);
++  box-shadow: var(--shadow);
++  border-left: 4px solid var(--clr-primary);
++  transition: transform 0.2s linear;
++}
++
++.education__item:hover {
++  transform: translateY(-4px);
++}
++
++.education__item-header {
++  display: flex;
++  align-items: center;
++  justify-content: space-between;
++  gap: 1em;
++  flex-wrap: wrap;
++}
++
++.education__degree {
++  color: var(--clr-primary);
++  font-size: 1.05rem;
++}
++
++.education__status {
++  font-size: 0.72rem;
++  font-weight: 600;
++  text-transform: uppercase;
++  letter-spacing: 0.06em;
++  color: var(--clr-bg);
++  background-color: var(--clr-primary);
++  padding: 0.25em 0.75em;
++  border-radius: 2px;
++  white-space: nowrap;
++}
++
++.education__school {
++  margin-top: 0.4em;
++  font-weight: 500;
++  color: var(--clr-fg-alt);
++}
++
++.education__concentration {
++  margin-top: 0.2em;
++  font-size: 0.9rem;
++  font-style: italic;
++  color: var(--clr-fg);
++}
++
++.education__description {
++  margin-top: 0.7em;
++  font-size: 0.9rem;
++  color: var(--clr-fg);
++  line-height: 1.6;
++}
+diff --git a/src/components/Education/Education.js b/src/components/Education/Education.js
+new file mode 100644
+index 0000000..8665fad
+--- /dev/null
++++ b/src/components/Education/Education.js
+@@ -0,0 +1,34 @@
++import uniqid from 'uniqid'
++import { education } from '../../portfolio'
++import './Education.css'
++
++const Education = () => {
++  if (!education || !education.length) return null
++
++  return (
++    <section id='education' className='section education'>
++      <h2 className='section__title'>Education</h2>
++      <div className='education__list'>
++        {education.map((item) => (
++          <div key={uniqid()} className='education__item'>
++            <div className='education__item-header'>
++              <h3 className='education__degree'>{item.degree}</h3>
++              {item.status && (
++                <span className='education__status'>{item.status}</span>
++              )}
++            </div>
++            <p className='education__school'>{item.school}</p>
++            {item.concentration && (
++              <p className='education__concentration'>{item.concentration}</p>
++            )}
++            {item.description && (
++              <p className='education__description'>{item.description}</p>
++            )}
++          </div>
++        ))}
++      </div>
++    </section>
++  )
++}
++
++export default Education
+diff --git a/src/components/Footer/Footer.js b/src/components/Footer/Footer.js
+index 53517cb..3699541 100644
+--- a/src/components/Footer/Footer.js
++++ b/src/components/Footer/Footer.js
+@@ -2,12 +2,7 @@ import './Footer.css'
+ 
+ const Footer = () => (
+   <footer className='footer'>
+-    <a
+-      href='https://github.com/rjshkhr/cleanfolio'
+-      className='link footer__link'
+-    >
+-      Created By Raj Shekhar
+-    </a>
++    <span className='footer__link'>© 2026 Noa Kim</span>
+   </footer>
+ )
+ 
+diff --git a/src/components/Navbar/Navbar.js b/src/components/Navbar/Navbar.js
+index 5c0cea2..c8b0bbf 100644
+--- a/src/components/Navbar/Navbar.js
++++ b/src/components/Navbar/Navbar.js
+@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from '@material-ui/icons/WbSunnyRounded'
+ import MenuIcon from '@material-ui/icons/Menu'
+ import CloseIcon from '@material-ui/icons/Close'
+ import { ThemeContext } from '../../contexts/theme'
+-import { projects, skills, contact } from '../../portfolio'
++import { education, projects, skills, contact } from '../../portfolio'
+ import './Navbar.css'
+ 
+ const Navbar = () => {
+@@ -19,6 +19,18 @@ const Navbar = () => {
+         style={{ display: showNavList ? 'flex' : null }}
+         className='nav__list'
+       >
++        {education && education.length ? (
++          <li className='nav__list-item'>
++            <a
++              href='#education'
++              onClick={toggleNavList}
++              className='link link--nav'
++            >
++              Education
++            </a>
++          </li>
++        ) : null}
++
+         {projects.length ? (
+           <li className='nav__list-item'>
+             <a
+@@ -26,7 +38,7 @@ const Navbar = () => {
+               onClick={toggleNavList}
+               className='link link--nav'
+             >
+-              Projects
++              Work
+             </a>
+           </li>
+         ) : null}
+diff --git a/src/components/Projects/Projects.js b/src/components/Projects/Projects.js
+index d6742ae..dd3c123 100644
+--- a/src/components/Projects/Projects.js
++++ b/src/components/Projects/Projects.js
+@@ -8,7 +8,7 @@ const Projects = () => {
+ 
+   return (
+     <section id='projects' className='section projects'>
+-      <h2 className='section__title'>Projects</h2>
++      <h2 className='section__title'>Work</h2>
+ 
+       <div className='projects__grid'>
+         {projects.map((project) => (
+diff --git a/src/components/Skills/Skills.css b/src/components/Skills/Skills.css
+index c12d108..c0fcc24 100644
+--- a/src/components/Skills/Skills.css
++++ b/src/components/Skills/Skills.css
+@@ -1,5 +1,5 @@
+ .skills__list {
+-  max-width: 450px;
++  max-width: 680px;
+   width: 95%;
+   margin: 0 auto;
+   display: flex;
+diff --git a/src/portfolio.js b/src/portfolio.js
+index e79ce7b..a6d844e 100644
+--- a/src/portfolio.js
++++ b/src/portfolio.js
+@@ -1,75 +1,78 @@
+ const header = {
+-  // all the properties are optional - can be left empty or deleted
+-  homepage: 'https://rjshkhr.github.io/cleanfolio',
+-  title: 'JS.',
++  homepage: 'https://noa-kim.github.io',
++  title: 'NK.',
+ }
+ 
+ const about = {
+-  // all the properties are optional - can be left empty or deleted
+-  name: 'John Smith',
+-  role: 'Front End Engineer',
+-  picture: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
+-
++  name: 'Noa Kim',
++  credentials: 'MSI · MSW (forthcoming)',
++  role: 'Clinical Informatics Design Lead · Product Manager · UX Researcher',
+   description:
+-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+-  resume: 'https://example.com',
++    'I design stories, services, and systems that make room for the humanity of health care experiences. As Clinical Informatics Design Lead for the Michigan Collaborative for Type 2 Diabetes (MCT2D) and Healthy Behavior Optimization for Michigan (HBOM), I work at the intersection of clinical practice, technology, and community—elevating patients as teachers and building tools that clinicians and patients can trust.',
+   social: {
+-    linkedin: 'https://linkedin.com',
+-    github: 'https://github.com',
++    linkedin: 'https://www.linkedin.com/in/noakim/',
++    github: 'https://github.com/noa-kim',
+   },
+ }
+ 
++const education = [
++  {
++    degree: 'Master of Social Work (MSW)',
++    school: 'University of Michigan',
++    status: 'In Progress',
++    description:
++      'Focused on healing communities through humane technologies and fair, transparent, and sustainable policies for AI in work, healthcare, and everyday life.',
++  },
++  {
++    degree: 'Master of Science in Information (MSI)',
++    school: 'University of Michigan',
++    concentration: 'Human-Computer Interaction',
++  },
++  {
++    degree: 'Bachelor of Arts',
++    school: 'Beloit College',
++    concentration: 'Public Health & Sociology',
++  },
++]
++
+ const projects = [
+-  // projects can be added an removed
+-  // if there are no projects, Projects section won't show up
+   {
+-    name: 'Project 1',
++    name: 'AI & Psychosis: A Social Work Perspective',
+     description:
+-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+-    stack: ['SASS', 'TypeScript', 'React'],
+-    sourceCode: 'https://github.com',
+-    livePreview: 'https://github.com',
+-    image: 'cleanfolio.png',
++      'SW600 capstone examining AI applications in psychosis diagnosis and treatment—surfacing ethical risks, power dynamics, and the stakes for patients whose experiences resist algorithmic capture.',
++    stack: ['AI Ethics', 'Policy Analysis', 'Qualitative Research', 'Clinical Social Work'],
+   },
+   {
+-    name: 'Project 2',
++    name: 'Patient Storytelling Initiative',
+     description:
+-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+-    stack: ['SASS', 'TypeScript', 'React'],
+-    sourceCode: 'https://github.com',
+-    livePreview: 'https://github.com',
+-    image: 'https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png',
++      'Video storytelling products developed with MCT2D and HBOM that elevate patients as teachers within learning health systems, centering lived experience in diabetes care and healthy behavior research.',
++    stack: ['UX Research', 'Community Engagement', 'Learning Health Systems', 'Video Production'],
+   },
+   {
+-    name: 'Project 3',
++    name: 'HCD Training for Healthcare Workers',
+     description:
+-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+-    stack: ['SASS', 'TypeScript', 'React'],
+-    sourceCode: 'https://github.com',
+-    livePreview: 'https://github.com',
++      'A curriculum and workshop series bringing human-centered design methodology to clinical and care team contexts, building capacity for experimentation and co-design among frontline healthcare workers.',
++    stack: ['Instructional Design', 'HCD', 'Clinical Informatics', 'Facilitation'],
+   },
+ ]
+ 
+ const skills = [
+-  // skills can be added or removed
+-  // if there are no skills, Skills section won't show up
+-  'HTML',
+-  'CSS',
+-  'JavaScript',
+-  'TypeScript',
+-  'React',
+-  'Redux',
+-  'SASS',
+-  'Material UI',
+-  'Git',
+-  'CI/CD',
+-  'Jest',
+-  'Enzyme',
++  'UX Research',
++  'Human-Centered Design',
++  'Product Management',
++  'Clinical Informatics',
++  'Design Thinking',
++  'Qualitative Methods',
++  'Usability Testing',
++  'Population Health',
++  'Data-Driven Storytelling',
++  'Learning Health Systems',
++  'AI Policy',
++  'Community Engagement',
+ ]
+ 
+ const contact = {
+-  // email is optional - if left empty Contact section won't show up
+-  email: 'johnsmith@mail.com',
++  email: 'hifromnoa@gmail.com',
+ }
+ 
+-export { header, about, projects, skills, contact }
++export { header, about, education, projects, skills, contact }
+-- 
+2.43.0

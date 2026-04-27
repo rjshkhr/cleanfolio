@@ -7,18 +7,28 @@
   color: var(--clr-primary);
 }
 
+.about__credentials {
+  font-size: 0.9rem;
+  color: var(--clr-fg-alt);
+  margin-top: 0.4em;
+  letter-spacing: 0.04em;
+}
+
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 0.8em;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--clr-fg-alt);
 }
 
 .about__desc {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 640px;
 }
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 2em;
 }
 
 .about .link--icon {
@@ -39,16 +49,16 @@
 .about__header {
   display: flex;
   align-items: center;
-  gap: 1.5rem; /* space between picture and text */
+  gap: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .about__picture {
   width: 180px;
   height: 180px;
-  border-radius: 70%;   /* round profile */
+  border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .about__intro {

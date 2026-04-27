@@ -41,6 +41,7 @@ const projects = [
     description:
       'SW600 capstone examining AI applications in psychosis diagnosis and treatment—surfacing ethical risks, power dynamics, and the stakes for patients whose experiences resist algorithmic capture.',
     stack: ['AI Ethics', 'Policy Analysis', 'Qualitative Research', 'Clinical Social Work'],
+    livePreview: 'https://noa-kim.github.io/SW600',
   },
   {
     name: 'Patient Storytelling Initiative',

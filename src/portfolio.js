@@ -71,8 +71,4 @@ const skills = [
   'Community Engagement',
 ]
 
-const contact = {
-  email: 'hifromnoa@gmail.com',
-}
-
-export { header, about, education, projects, skills, contact }
+export { header, about, education, projects, skills }

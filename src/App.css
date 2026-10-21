@@ -15,7 +15,7 @@
   --clr-bg: #fafaf9;
   --clr-fg: #57534e;
   --clr-fg-strong: #1c1917;
-  --clr-muted: #a8a29e;
+  --clr-muted: #716b66;
   --clr-line: #e7e5e4;
   --clr-primary: #2563eb;
 }
@@ -24,7 +24,7 @@
   --clr-bg: #292d38;
   --clr-fg: #b9bdc9;
   --clr-fg-strong: #f4f5f8;
-  --clr-muted: #858b9b;
+  --clr-muted: #9aa0b0;
   --clr-line: #3a3f4d;
   --clr-primary: #8ab4ff;
 }
@@ -86,6 +86,7 @@ main {
 }
 
 .btn {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 0.4em;
@@ -153,6 +154,11 @@ main {
 @media (max-width: 600px) {
   .section {
     margin-top: 4.5rem;
+  }
+
+  .btn {
+    padding: 0.6em 1.05em;
+    font-size: 0.85rem;
   }
 }
 

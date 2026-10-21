@@ -1,16 +1,17 @@
 .about {
-  flex-direction: column;
   margin-top: 3em;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  grid-gap: 3em;
+  align-items: center;
 }
 
 .about__image {
-  width: 160px;
-  height: 160px;
-  margin-bottom: 1.5em;
-  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1;
   object-fit: cover;
-  border: 4px solid var(--clr-primary);
   box-shadow: var(--shadow);
+  border: 4px solid var(--clr-primary);
 }
 
 .about__tagline {
@@ -18,7 +19,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--clr-primary);
-  text-align: center;
 }
 
 .about__name {
@@ -36,7 +36,12 @@
 
 .about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 2em;
+}
+
+.about__contact {
+  display: flex;
+  align-items: center;
 }
 
 .about .link--icon {
@@ -47,9 +52,13 @@
   margin-right: 1em;
 }
 
-@media (max-width: 600px) {
-  .app .about {
-    align-items: flex-start;
+@media (max-width: 900px) {
+  .about {
+    grid-template-columns: 1fr;
     margin-top: 2em;
+  }
+
+  .about__image {
+    max-width: 320px;
   }
 }

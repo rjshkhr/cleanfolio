@@ -23,7 +23,7 @@
 
 .about__desc {
   margin-top: 1rem;
-  max-width: 600px;
+  max-width: var(--measure);
 }
 
 .about__contact {

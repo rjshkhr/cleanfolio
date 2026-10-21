@@ -1,17 +1,13 @@
-.contact {
-  border-top: 1px solid var(--clr-line);
+.contact__body {
   padding-top: 2rem;
-}
-
-.contact .section__title {
-  margin-bottom: 1rem;
+  border-top: 1px solid var(--clr-line);
 }
 
 .contact__text {
+  max-width: var(--measure);
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--clr-fg-strong);
-  max-width: 480px;
 }
 
 .contact__link {

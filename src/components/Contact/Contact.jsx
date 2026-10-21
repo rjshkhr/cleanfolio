@@ -10,7 +10,7 @@ const Contact = () => {
       <Reveal as='h2' className='section__title'>
         Contact
       </Reveal>
-      <Reveal delay={100}>
+      <Reveal className='contact__body' delay={100}>
         <p className='contact__text'>
           Open to full-time backend and developer-tooling roles.
         </p>

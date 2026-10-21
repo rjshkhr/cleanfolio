@@ -9,7 +9,7 @@
 .project__description {
   margin-top: 0.4rem;
   font-size: 0.95rem;
-  max-width: 560px;
+  max-width: var(--measure);
 }
 
 .project__stack {

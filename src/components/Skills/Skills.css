@@ -1,12 +1,10 @@
 .skills__group {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-gap: 1.5rem;
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
   border-top: 1px solid var(--clr-line);
 }
 
 .skills__category {
+  margin-bottom: 0.4rem;
   font-size: 0.8rem;
   font-weight: 400;
   color: var(--clr-muted);
@@ -14,11 +12,4 @@
 
 .skills__items {
   font-size: 0.95rem;
-}
-
-@media (max-width: 700px) {
-  .skills__group {
-    grid-template-columns: 1fr;
-    grid-gap: 0.3rem;
-  }
 }

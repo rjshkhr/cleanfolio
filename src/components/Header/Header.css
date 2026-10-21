@@ -1,9 +1,22 @@
 .header {
-  height: 6rem;
-  max-width: 760px;
-  width: 90%;
-  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 4rem;
+  width: 100%;
+  padding: 0 max(5%, calc((100% - 760px) / 2));
   justify-content: space-between;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: color-mix(in srgb, var(--clr-bg) 70%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--clr-line);
 }
 
 .header h3 {

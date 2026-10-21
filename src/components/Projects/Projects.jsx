@@ -1,4 +1,5 @@
 import { projects } from '../../portfolio'
+import Reveal from '../Reveal/Reveal'
 import ProjectContainer from '../ProjectContainer/ProjectContainer'
 import './Projects.css'
 
@@ -7,11 +8,15 @@ const Projects = () => {
 
   return (
     <section id='projects' className='section projects'>
-      <h2 className='section__title'>Projects</h2>
+      <Reveal as='h2' className='section__title'>
+        Projects
+      </Reveal>
 
       <div className='projects__grid'>
         {projects.map((project) => (
-          <ProjectContainer key={project.name} project={project} />
+          <Reveal key={project.name}>
+            <ProjectContainer project={project} />
+          </Reveal>
         ))}
       </div>
     </section>

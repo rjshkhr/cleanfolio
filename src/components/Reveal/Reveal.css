@@ -1,0 +1,14 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(32px) scale(0.985);
+  filter: blur(6px);
+  transition: opacity 1s var(--ease), transform 1s var(--ease),
+    filter 1s var(--ease);
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}

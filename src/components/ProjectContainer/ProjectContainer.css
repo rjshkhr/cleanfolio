@@ -39,3 +39,20 @@
     grid-template-columns: 1fr;
   }
 }
+
+.project h3 {
+  transition: color 0.3s var(--ease), transform 0.5s var(--ease);
+}
+
+.project:hover h3 {
+  color: var(--clr-primary);
+  transform: translateX(4px);
+}
+
+.project .link--icon {
+  transition: color 0.3s var(--ease), transform 0.4s var(--ease);
+}
+
+.project .link--icon:hover {
+  transform: scale(1.2);
+}

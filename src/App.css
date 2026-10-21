@@ -6,6 +6,10 @@
   background-color: var(--clr-bg);
 }
 
+.app {
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .light {
   --clr-bg: #fafaf9;
   --clr-fg: #57534e;
@@ -50,7 +54,7 @@ main {
 
 .link {
   color: var(--clr-fg-strong);
-  transition: color 0.15s ease;
+  transition: color 0.3s var(--ease);
 }
 
 .link:hover {
@@ -86,7 +90,7 @@ main {
   padding: 0.65em 1.3em;
   font-weight: 500;
   font-size: 0.9rem;
-  transition: opacity 0.15s ease, transform 0.15s ease;
+  transition: opacity 0.3s var(--ease), transform 0.4s var(--ease);
 }
 
 .btn--solid {
@@ -97,7 +101,12 @@ main {
 
 .btn--solid:hover,
 .btn--solid:focus {
-  opacity: 0.85;
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+.btn--solid:active {
+  transform: scale(0.98);
 }
 
 .btn--icon {
@@ -113,5 +122,36 @@ main {
 @media (max-width: 600px) {
   .section {
     margin-top: 4.5rem;
+  }
+}
+
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+
+  .about > * {
+    animation: none !important;
   }
 }

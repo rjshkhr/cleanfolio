@@ -1,6 +1,8 @@
 .about {
+  display: flex;
   flex-direction: column;
-  margin-top: 3em;
+  align-items: flex-start;
+  margin-top: 4rem;
 }
 
 .about__name {
@@ -8,38 +10,31 @@
 }
 
 .about__tagline {
-  margin-top: 0.8em;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--clr-primary);
-  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--clr-muted);
 }
 
 .about__role {
-  margin-top: 1.2em;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  color: var(--clr-fg);
 }
 
 .about__desc {
-  font-size: 1rem;
+  margin-top: 1rem;
   max-width: 600px;
 }
 
-.about__desc,
 .about__contact {
-  margin-top: 2.4em;
+  margin-top: 2rem;
+}
+
+.about__contact {
+  display: flex;
+  align-items: center;
 }
 
 .about .link--icon {
-  margin-right: 0.8em;
-}
-
-.about .btn--solid {
-  margin-right: 1em;
-}
-
-@media (max-width: 600px) {
-  .app .about {
-    align-items: flex-start;
-    margin-top: 2em;
-  }
+  margin-left: 1rem;
 }

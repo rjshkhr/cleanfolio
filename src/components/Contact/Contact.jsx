@@ -5,12 +5,13 @@ const Contact = () => {
   if (!contact.email) return null
 
   return (
-    <section className='section contact center' id='contact'>
+    <section className='section contact' id='contact'>
       <h2 className='section__title'>Contact</h2>
-      <a href={`mailto:${contact.email}`}>
-        <span type='button' className='btn btn--outline'>
-          Email me
-        </span>
+      <p className='contact__text'>
+        Open to full-time backend and developer-tooling roles.
+      </p>
+      <a href={`mailto:${contact.email}`} className='link--text contact__link'>
+        {contact.email}
       </a>
     </section>
   )

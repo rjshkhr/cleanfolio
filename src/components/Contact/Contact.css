@@ -1,3 +1,20 @@
 .contact {
-  flex-direction: column;
+  border-top: 1px solid var(--clr-line);
+  padding-top: 2rem;
+}
+
+.contact .section__title {
+  margin-bottom: 1rem;
+}
+
+.contact__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--clr-fg-strong);
+  max-width: 480px;
+}
+
+.contact__link {
+  display: inline-block;
+  margin-top: 1rem;
 }

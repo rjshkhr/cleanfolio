@@ -7,7 +7,7 @@ const About = () => {
   const { name, tagline, role, description, resume, social } = about
 
   return (
-    <div className='about center'>
+    <div className='about'>
       {name && (
         <h1>
           Hi, I am <span className='about__name'>{name}.</span>
@@ -19,7 +19,7 @@ const About = () => {
       {role && <h2 className='about__role'>A {role}.</h2>}
       <p className='about__desc'>{description && description}</p>
 
-      <div className='about__contact center'>
+      <div className='about__contact'>
         {resume && (
           <a href={resume} target='_blank' rel='noopener noreferrer'>
             <span type='button' className='btn btn--solid'>

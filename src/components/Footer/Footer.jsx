@@ -2,7 +2,7 @@ import './Footer.css'
 
 const Footer = () => (
   <footer className='footer'>
-    <p>2023</p>
+    <p>© {new Date().getFullYear()} Jonathan Portillo</p>
   </footer>
 )
 

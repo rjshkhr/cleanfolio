@@ -15,28 +15,33 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 h1,
 h2,
 h3,
 h4 {
   line-height: 1.2;
-  color: var(--clr-fg-alt);
+  color: var(--clr-fg-strong);
+  letter-spacing: -0.01em;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.5rem;
-}
-
-h4 {
-  font-size: 1.3rem;
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
 ul {
@@ -51,8 +56,13 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+:focus-visible {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2.2rem;
   }
 }

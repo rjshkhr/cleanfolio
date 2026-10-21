@@ -11,13 +11,7 @@ const Skills = () => {
         {skills.map(({ category, items }) => (
           <div key={category} className='skills__group'>
             <h3 className='skills__category'>{category}</h3>
-            <ul className='skills__list'>
-              {items.map((skill) => (
-                <li key={skill} className='skills__list-item btn btn--plain'>
-                  {skill}
-                </li>
-              ))}
-            </ul>
+            <p className='skills__items'>{items.join(' · ')}</p>
           </div>
         ))}
       </div>

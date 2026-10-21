@@ -117,6 +117,7 @@ const skills = [
       'Bash',
       'HTML',
       'CSS',
+      'LESS',
     ],
   },
   {
@@ -130,7 +131,13 @@ const skills = [
       'Node.js',
       'Express.js',
       'TailwindCSS',
+      'Material UI',
+      'Bootstrap',
     ],
+  },
+  {
+    category: 'Databases',
+    items: ['Postgres', 'SQLite', 'Knex.js'],
   },
   {
     category: 'Tools',
@@ -162,6 +169,9 @@ const skills = [
       'Configuration management',
       'Environment promotion (local to prod)',
       'Technical documentation',
+      'Authentication',
+      'Deployment',
+      'Responsive design',
       'Cross-team collaboration',
       'Agile',
     ],

@@ -11,9 +11,7 @@ const Contact = () => {
         Contact
       </Reveal>
       <Reveal className='contact__body' delay={100}>
-        <p className='contact__text'>
-          Open to full-time backend and developer-tooling roles.
-        </p>
+        <p className='contact__text'>{contact.message}</p>
         <a
           href={`mailto:${contact.email}`}
           className='link--text contact__link'

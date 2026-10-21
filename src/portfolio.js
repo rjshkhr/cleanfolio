@@ -7,10 +7,10 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Jonathan Portillo',
-  tagline: 'Brooklyn, NY · Open to backend and developer-tooling roles',
+  tagline: 'Brooklyn, NY · Open to full-stack software engineering roles',
   role: 'Software Engineer',
   description:
-    'Software engineer with 10 years at T-Mobile, from Mobile Expert to Experience Associate Manager. Most recently I built a full-stack Cache Management tool with the Magenta Accelerator program and cut non-prod deployment runs from about 6 minutes to 30 seconds. I work across Java and Spring Boot, Node.js, Angular and React, and I am looking for a full-time role in backend systems and developer tooling.',
+    'Software engineer with 10 years at T-Mobile, from Mobile Expert to Experience Associate Manager. Most recently I built a full-stack Cache Management tool with the Magenta Accelerator program and cut non-prod deployment runs from about 6 minutes to 30 seconds. I work across Java and Spring Boot, Node.js, Angular and React, and I am looking for a full-time software engineering role where I can build across the whole stack.',
   resume: '/Jonathan-Portillo-Resume.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/jonathanportillo93/',
@@ -144,6 +144,9 @@ const skills = [
 ]
 
 const contact = {
+  // message is optional - shown above the email
+  message:
+    "Open to software engineering roles across the front end, back end, or full stack. Let's build something great together.",
   // email is optional - if left empty Contact section won't show up
   email: 'jonport93@gmail.com',
 }

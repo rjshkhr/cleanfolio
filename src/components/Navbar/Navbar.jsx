@@ -1,71 +1,51 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Brightness2Icon from '@mui/icons-material/Brightness2'
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded'
-import MenuIcon from '@mui/icons-material/Menu'
-import CloseIcon from '@mui/icons-material/Close'
 import { ThemeContext } from '../../contexts/theme'
 import { experience, projects, skills, contact } from '../../portfolio'
 import './Navbar.css'
 
 const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
-  const [showNavList, setShowNavList] = useState(false)
+  const [open, setOpen] = useState(false)
 
-  const toggleNavList = () => setShowNavList(!showNavList)
+  const links = [
+    experience.length && { href: '#experience', label: 'Experience' },
+    projects.length && { href: '#projects', label: 'Projects' },
+    skills.length && { href: '#skills', label: 'Skills' },
+    contact.email && { href: '#contact', label: 'Contact' },
+  ].filter(Boolean)
+
+  useEffect(() => {
+    if (!open) return undefined
+
+    const onKeyDown = (e) => e.key === 'Escape' && setOpen(false)
+    document.addEventListener('keydown', onKeyDown)
+    document.body.style.overflow = 'hidden'
+
+    return () => {
+      document.removeEventListener('keydown', onKeyDown)
+      document.body.style.overflow = ''
+    }
+  }, [open])
 
   return (
     <nav className='center nav'>
       <ul
-        style={{ display: showNavList ? 'flex' : null }}
-        className='nav__list'
+        id='nav-list'
+        className={`nav__list ${open ? 'nav__list--open' : ''}`}
       >
-        {experience.length ? (
-          <li className='nav__list-item'>
+        {links.map(({ href, label }) => (
+          <li key={href} className='nav__list-item'>
             <a
-              href='#experience'
-              onClick={toggleNavList}
+              href={href}
+              onClick={() => setOpen(false)}
               className='link link--nav'
             >
-              Experience
+              {label}
             </a>
           </li>
-        ) : null}
-
-        {projects.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#projects'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Projects
-            </a>
-          </li>
-        ) : null}
-
-        {skills.length ? (
-          <li className='nav__list-item'>
-            <a
-              href='#skills'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Skills
-            </a>
-          </li>
-        ) : null}
-
-        {contact.email ? (
-          <li className='nav__list-item'>
-            <a
-              href='#contact'
-              onClick={toggleNavList}
-              className='link link--nav'
-            >
-              Contact
-            </a>
-          </li>
-        ) : null}
+        ))}
       </ul>
 
       <button
@@ -79,12 +59,25 @@ const Navbar = () => {
 
       <button
         type='button'
-        onClick={toggleNavList}
-        className='btn btn--icon nav__hamburger'
-        aria-label='toggle navigation'
+        onClick={() => setOpen(!open)}
+        className={`btn btn--icon nav__hamburger ${open ? 'is-open' : ''}`}
+        aria-label={open ? 'close navigation' : 'open navigation'}
+        aria-expanded={open}
+        aria-controls='nav-list'
       >
-        {showNavList ? <CloseIcon /> : <MenuIcon />}
+        <span className='nav__bar' />
+        <span className='nav__bar' />
       </button>
+
+      {open && (
+        <button
+          type='button'
+          className='nav__backdrop'
+          aria-label='close navigation'
+          tabIndex={-1}
+          onClick={() => setOpen(false)}
+        />
+      )}
     </nav>
   )
 }

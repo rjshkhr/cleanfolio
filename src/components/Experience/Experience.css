@@ -1,0 +1,37 @@
+.experience__list {
+  max-width: 1400px;
+  width: 96%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+  align-items: stretch;
+}
+
+.experience__item {
+  padding: 1.5em;
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 1100px) {
+  .experience__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience__meta {
+  margin-top: 0.3em;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--clr-fg-alt);
+}
+
+.experience__highlights {
+  margin-top: 1em;
+  padding-left: 1.2em;
+  list-style: disc;
+}
+
+.experience__highlights li {
+  margin-bottom: 0.5em;
+}

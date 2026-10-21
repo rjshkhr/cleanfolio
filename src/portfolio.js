@@ -7,7 +7,6 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Jonathan Portillo',
-  image: '/headshot.jpg',
   tagline: 'Brooklyn, NY · Open to backend and developer-tooling roles',
   role: 'Software Engineer',
   description:

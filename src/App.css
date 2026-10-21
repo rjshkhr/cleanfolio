@@ -86,7 +86,9 @@ main {
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   cursor: pointer;
   padding: 0.65em 1.3em;
   font-weight: 500;
@@ -97,7 +99,7 @@ main {
 .btn--solid {
   color: var(--clr-bg);
   background-color: var(--clr-fg-strong);
-  border-radius: 6px;
+  border-radius: 999px;
 }
 
 .btn--solid:hover,
@@ -108,6 +110,34 @@ main {
 
 .btn--solid:active {
   transform: scale(0.98);
+}
+
+.btn--ghost {
+  color: var(--clr-fg-strong);
+  border: 1px solid var(--clr-line);
+  border-radius: 999px;
+  transition: border-color 0.3s var(--ease), background-color 0.3s var(--ease),
+    transform 0.4s var(--ease);
+}
+
+.btn--ghost:hover,
+.btn--ghost:focus {
+  border-color: var(--clr-fg);
+  transform: scale(1.04);
+}
+
+.btn--ghost:active {
+  transform: scale(0.98);
+}
+
+.btn__icon {
+  font-size: 1.1em !important;
+  transition: transform 0.4s var(--ease);
+}
+
+.btn--solid:hover .btn__icon--arrow,
+.btn--solid:focus .btn__icon--arrow {
+  transform: translate(2px, -2px);
 }
 
 .btn--icon {

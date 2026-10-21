@@ -33,10 +33,11 @@
 .about__contact {
   display: flex;
   align-items: center;
+  gap: 0.75rem;
 }
 
 .about .link--icon {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .about > * {

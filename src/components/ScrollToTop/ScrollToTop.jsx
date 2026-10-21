@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
 import './ScrollToTop.css'
 
 const ScrollToTop = () => {

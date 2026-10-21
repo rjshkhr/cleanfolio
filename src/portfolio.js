@@ -7,6 +7,8 @@ const header = {
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Jonathan Portillo',
+  image: '/headshot.jpg',
+  tagline: 'Brooklyn, NY · Open to backend and developer-tooling roles',
   role: 'Software Engineer',
   description:
     'Software engineer with 10 years at T-Mobile, from Mobile Expert to Experience Associate Manager. Most recently I built a full-stack Cache Management tool with the Magenta Accelerator program and cut non-prod deployment runs from about 6 minutes to 30 seconds. I work across Java and Spring Boot, Node.js, Angular and React, and I am looking for a full-time role in backend systems and developer tooling.',
@@ -19,6 +21,7 @@ const about = {
 
 const experience = [
   // experience can be added or removed
+  // wrap text in **double asterisks** to make it bold
   // if there is no experience, Experience section won't show up
   {
     role: 'Software Engineer Intern, Magenta Accelerator Program',
@@ -26,9 +29,9 @@ const experience = [
     location: 'Overland Park, KS',
     dates: 'Aug 2026 – Oct 2026',
     highlights: [
-      'Built a full-stack Cache Management tool (Java/Spring Boot, Node.js/Express, Angular/TypeScript) giving engineers self-service Redis browse and write access, including a guided mode for ~40 object types.',
-      'Parallelized configuration-deployment scripts with batched render/compare phases and a single bulk cluster fetch, cutting non-prod runtime from ~6 minutes to ~30 seconds.',
-      'Standardized customer-facing 500/503 error messages across 50+ API configuration files, verified with WireMock/Cucumber tests and in deployed environments.',
+      'Built a full-stack **Cache Management tool** (Java/Spring Boot, Node.js, Angular) giving engineers self-service Redis access.',
+      'Cut non-prod deployment script runtime from **~6 minutes to ~30 seconds** by parallelizing config rendering and cluster fetches.',
+      'Standardized 500/503 error messages across **50+ API configs**, verified with WireMock and Cucumber.',
     ],
   },
   {
@@ -37,9 +40,9 @@ const experience = [
     location: 'Long Island City, NY',
     dates: 'Jun 2024 – Jan 2025',
     highlights: [
-      'Built a secure admin settings page for managing users, facilities, and employees, with protected routes and role-based access.',
-      'Built responsive front-end components in Angular, TypeScript, and Tailwind CSS, with front-end authentication and RxJS state management.',
-      'Wrote unit and integration tests with Jasmine and Karma to improve code reliability.',
+      'Built a secure **admin settings page** with protected routes and role-based access.',
+      'Built responsive **Angular, TypeScript and Tailwind** components, with front-end authentication and RxJS state management.',
+      'Wrote unit and integration tests with Jasmine and Karma to improve reliability.',
     ],
   },
   {
@@ -48,10 +51,9 @@ const experience = [
     location: 'Queens, NY',
     dates: 'Jun 2015 – Present',
     highlights: [
-      "Annual Winner's Circle 2024: top 1% of sales representatives company-wide (224 of 20,610).",
+      "**Annual Winner's Circle 2024:** top 1% of sales representatives company-wide (224 of 20,610).",
       'Coached Sr. Mobile Experts through skill practice and account audits, and led the team past its Q2 2026 new-account targets.',
-      'Consistently hit monthly sales quotas while keeping current on rate plans, devices, and promotions.',
-      'Build relationships with business customers and local businesses to drive sales.',
+      'Consistently hit monthly sales quotas while building relationships with business customers.',
     ],
   },
 ]
@@ -107,29 +109,39 @@ const projects = [
 const skills = [
   // skills can be added or removed
   // if there are no skills, Skills section won't show up
-  'Java',
-  'Spring Boot',
-  'TypeScript',
-  'JavaScript',
-  'Python',
-  'Angular',
-  'React',
-  'Redux',
-  'RxJS',
-  'Node.js',
-  'Express.js',
-  'TailwindCSS',
-  'Redis',
-  'GitLab CI/CD',
-  'Kubernetes',
-  'REST APIs',
-  'WireMock',
-  'Cucumber',
-  'Jasmine',
-  'Karma',
-  'Git',
-  'HTML',
-  'CSS',
+  {
+    category: 'Languages',
+    items: ['Java', 'TypeScript', 'JavaScript', 'Python', 'HTML', 'CSS'],
+  },
+  {
+    category: 'Frameworks',
+    items: [
+      'Spring Boot',
+      'Angular',
+      'React',
+      'Redux',
+      'RxJS',
+      'Node.js',
+      'Express.js',
+      'TailwindCSS',
+    ],
+  },
+  {
+    category: 'Tools & Practices',
+    items: [
+      'Redis',
+      'GitLab CI/CD',
+      'Kubernetes',
+      'REST APIs',
+      'WireMock',
+      'Cucumber',
+      'Jasmine',
+      'Karma',
+      'Git',
+      'Code Review',
+      'Agile',
+    ],
+  },
 ]
 
 const contact = {

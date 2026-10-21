@@ -19,6 +19,22 @@
   }
 }
 
+.experience__dates {
+  display: inline-block;
+  margin-bottom: 0.8em;
+  padding: 0.2em 0.8em;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--clr-primary);
+  border: 1px solid var(--clr-primary);
+}
+
+.experience__highlights strong {
+  font-weight: 700;
+  color: var(--clr-fg-alt);
+}
+
 .experience__meta {
   margin-top: 0.3em;
   font-size: 0.85rem;

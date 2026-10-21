@@ -121,6 +121,18 @@ main {
   right: 0;
 }
 
+.btn--solid {
+  color: var(--clr-bg);
+  background-color: var(--clr-primary);
+  border: 2px solid var(--clr-primary);
+}
+
+.btn--solid:hover,
+.btn--solid:focus {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
 .btn--plain {
   text-transform: initial;
   background-color: var(--clr-bg-alt);

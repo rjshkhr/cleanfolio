@@ -3,6 +3,24 @@
   margin-top: 3em;
 }
 
+.about__image {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 1.5em;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--clr-primary);
+  box-shadow: var(--shadow);
+}
+
+.about__tagline {
+  margin-top: 0.8em;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--clr-primary);
+  text-align: center;
+}
+
 .about__name {
   color: var(--clr-primary);
 }
@@ -25,7 +43,7 @@
   margin-right: 0.8em;
 }
 
-.about .btn--outline {
+.about .btn--solid {
   margin-right: 1em;
 }
 

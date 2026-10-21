@@ -1,10 +1,26 @@
-.skills__list {
-  max-width: 450px;
+.skills__groups {
+  max-width: 950px;
   width: 95%;
   margin: 0 auto;
+}
+
+.skills__group {
+  margin-bottom: 2em;
+}
+
+.skills__category {
+  text-align: center;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--clr-primary);
+}
+
+.skills__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 0.5em;
 }
 
 .skills__list-item {

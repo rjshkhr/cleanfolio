@@ -13,6 +13,7 @@
 .skills__items {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.2rem 1.4rem;
   max-width: var(--measure);
   font-size: 0.95rem;
 }
@@ -21,8 +22,3 @@
   white-space: nowrap;
 }
 
-.skills__items li:not(:last-child)::after {
-  content: '·';
-  margin: 0 0.6em;
-  color: var(--clr-muted);
-}
